@@ -30,12 +30,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
 
 </head>
-<body>
 
-    <header>
-        <div class="menu-bar">
-            <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
-        </div>
+<header>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
         <nav>
              <ul>
                 <li><a href="hospital.html"><span class="icon-truck">  Tickets Camiones</a></li>
@@ -45,7 +44,10 @@
                 <li><a href="doctores.html"><span class="icon-enter">  Entrega Materiales</a></li>
             </ul>
         </nav>
-    </header>
+</header>
+
+<body>
+
     <section>
         <div class="titulo-pag">
             <h1 class="tam">Tickets de Camiones</h1>
@@ -64,6 +66,18 @@
             </ul>
         </div>
     </section>
+
+    	<p>.</p>
+
+    <section>
+    	<div class="fecha">
+    		<h3> Filtrar fecha de 
+    		<input type="date" name="fecha" min="2020-01-1">
+            a <input type="date" name="fecha" min="2018-03-25">
+            </h3>
+    	</div>
+    </section>
+
     <section>
         <table>
             <thead>
@@ -139,12 +153,16 @@
                 </tr>                
             </tbody>
         </table>
-        <div class="col-12 forgot">
-            <h2> Vulcan logistics s.a. de c.v </h2>
-        </div>
     </section>      
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menu.js"></script>
 
 </body>
+
+<footer>
+	<div class="col-12 forgot">
+        <h2> Vulcan logistics s.a. de c.v </h2>
+    </div>
+</footer>
+
 </html>

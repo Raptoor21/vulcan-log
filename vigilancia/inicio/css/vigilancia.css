@@ -62,17 +62,6 @@ section ul li a:hover {
     padding: 0;
 }
 
-.info-img{
-    margin-top: 10px;
-    height:500px;
-}
-
-.info-img img{
-    width: 100%;
-    box-shadow: 0px 0px 0px #848484;
-    box-sizing: border-box;
-}
-
 .titulo-pag{
 	text-align: center;
 	color: white;
@@ -85,6 +74,19 @@ section ul li a:hover {
 
 .tam{
 	font-size: 3vw;
+}
+
+.fecha{
+	margin-top: 15px;
+	margin-bottom: 5%;
+	margin-left: 10%;
+}
+
+.fecha h3{
+	color: white;
+	font-size: 1.5vw;
+	margin-right: 15px;
+	float: left;
 }
 
 header{
@@ -148,6 +150,7 @@ table{
 	border-collapse: collapse;
 	background-color: #3b4652;
     margin:0 auto;
+    width: 80%;
 }
 
 td, th{
@@ -210,6 +213,10 @@ td, th{
 	 .menu-bar span {
 	 	float:right;
 	 	font-size:30px;
+	 }
+
+	 .fecha h3{
+		font-size: 2.4vw;
 	 }
 }
 
