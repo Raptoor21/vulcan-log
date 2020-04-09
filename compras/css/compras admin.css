@@ -62,6 +62,10 @@ section ul li a:hover {
     padding: 0;
 }
 
+.margen-tit{
+	margin-top: 50px;
+}
+
 .titulo-pag{
 	text-align: center;
 	color: white;
