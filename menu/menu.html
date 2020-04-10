@@ -28,24 +28,24 @@
 </head>
 
 <header>
-    <p>bienvenido: @Nombre Usuario <span class="icon-user"></p>
+    <p>bienvenido: <span class="user-selected">@Nombre Usuario </span><span class="icon-user"></p>
 </header>
 
 <body>
 
     <div class="contenedor">
-        <div class="main-section">
-        <div class="modal-content">
-            <div class="vigilancia-img">
-                <img src="img/buscar.jpg"/>
-            </div>
-            <div class="col-12 forgot">
-                <a href="#"> BUSCAR </a>
-            </div>
-        </div>
-    </div>
+        <div class="main-section search-module">
+			<div class="modal-content">
+				<div class="vigilancia-img">
+					<img src="img/buscar.jpg"/>
+				</div>
+				<div class="col-12 forgot">
+					<a href="#"> BUSCAR </a>
+				</div>
+			</div>
+    	</div>
 
-        <div class="main-section">
+        <div class="main-section security-module">
         	<div class="modal-content">
            	    <div class="vigilancia-img">
                     <img src="img/vigilancia.jpg"/>
@@ -71,7 +71,8 @@
         	<div class="modal-content">
             	<div class="vigilancia-img">
                 	<img src="img/trituracion.jpg"/>
-            	</div>
+				</div>
+				
             	<div class="col-12 forgot">
                     <a href="#"> TRITURACION </a>
             	</div>
@@ -111,7 +112,7 @@
         	</div>
     	</div> 
 
-        <div class="main-section">
+        <div class="main-section maintainment-module">
             <div class="modal-content">
              <div class="vigilancia-img">
                 <img src="img/mantenimiento.jpg"/>
@@ -123,7 +124,7 @@
         </div>
 
     	<div class="main-section margen-baj">
-        	<div class="modal-content">
+        	<div class="modal-content purchases-module">
             	<div class="vigilancia-img">
                 	<img src="img/compras.jpg"/>
             	</div>
@@ -133,6 +134,33 @@
         	</div>
     	</div>      	  
     </div> 
+	<script>
+        function getParam(param) {
+            var url_string = window.location.href;
+            var url = new URL(url_string)
+            return url.searchParams.get(param);
+		}
+		function toggleDisplay(mods, toggleValue = 'none') {
+			
+			mods.forEach(function(mod) {
+				mod.style.display = toggleValue;
+			})
+		}
+		function setModules() {
+			var modules = document.querySelectorAll('.main-section');
+			debugger
+			if(userDepartment) {
+				toggleDisplay(modules, 'none');
+				var singleModule = document.querySelector('.' + userDepartment + '-module');
+				singleModule.style.display = 'block'
+			}
+		}
+        var userType = getParam("user-type");
+        var userDepartment = getParam("user-department");
+		var userName = getParam("user-name");
+		var userSelEl = document.querySelector('.user-selected').innerHTML = userName + '\t\t';
+		setModules();
+    </script>
 
 </body>
 

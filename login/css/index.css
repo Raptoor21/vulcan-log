@@ -1,90 +1,27 @@
-body{
-   background: url(../img/background.jpg) no-repeat center center fixed;
-   background-size: cover;
+#department-select {
+	display: none;
 }
-
-.contenedor{
-    width:90%;
-    margin:0 auto;
-    overflow: hidden;
+.login-form {
+    width: 340px;
+    margin: 50px auto;
 }
-
-.main-section{
-    width:70%;
-    margin:0 auto;
-    margin-top:25%;
-    padding: 0;
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
 }
-
-.modal-content{
-    background-color: #3b4652;
-    opacity: .85;
-    padding: 0 20px;
-    box-shadow: 0px 0px 3px #848484;
+.login-form h2 {
+    margin: 0 0 15px;
 }
-
-.user-img{
-    margin-top: -50px;
-    margin-bottom: 35px;
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
 }
-
-.user-img img{
-    width: 200px;
-    height: 110px;
-    box-shadow: 0px 0px 0px #848484;
-    border-radius: 50%;
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
 }
-
-.btn-ingresar{
-    margin:0 auto;
-    margin-top:5%;
-    margin-bottom:5%;
-    width: 150px;
-    height: 40px;
+.margin-1-rem {
+    margin: 1rem;
 }
-
-.icon-ing{
-   margin-right:5%; 
-}
-
-.form-group input{
-    height: 42px;
-    font-size: 18px;
-    border:0;
-    padding-left: 54px;
-    border-radius: 5px;
-}
-
-.form-group::before{
-    font-family: "Font Awesome\ 5 Free";
-    position: absolute;
-    left: 28px;
-    font-size: 22px;
-    padding-top:4px;
-}
-
-.form-group#user-group::before{
-    content: "\f007";
-}
-
-.form-group#contrasena-group::before{
-    content: "\f023";
-}
-
-button{
-    width: 60%;
-    margin: 5px 0 25px;
-}
-
-.forgot{
-    padding: 5px 0;
-}
-
-.forgot a{
-    color: white;
-     font-size:1.7vw;
-    /*font-family: 'Press Start 2P', cursive;
-    font-family: 'Monoton', cursive;*/
-    font-family: 'Bad Script', cursive;
-}
-
