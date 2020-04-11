@@ -10,21 +10,37 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+     <!-- iconos moon -->
+    <link rel="stylesheet" href="../../iconos/fonts/style.css">
+    <!-- mi css -->
+    <link rel="stylesheet" href="css/index.css" />
+     <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
   <body>
+
     <main class="container">
-      <div class="login-form">
+      <div class="modal-content">
         <form action="../menu/menu.html" method="get">
+           <div class="col-12 user-img">
+              <img src="img/user.png"/>
+          </div>
 		  <h2 class="text-center">Log in</h2>
 		  <div class="form-group">
             <label for="title">Ingresa el Nombre del Usuario</label>
-			<input
+			  <div class="form-group" id="user-group">
+        <input 
 				placeholder="ingresa nombre aqui.."	
 				class="form-control"
 				name="user-name"
 				required="required"
             />
+        </div>
           </div>
           <div id="user-type-select" class="form-group">
             <label for="title">Selecciona el tipo de usuario</label>
@@ -56,11 +72,26 @@
             </select>
           </div>
           <div class="form-group">
+            <label for="title">Ingresa tu contraseña</label>
+            <div class="form-group" id="contrasena-group">
+            <input
+            type="password"
+            placeholder="ingresa contraseña aqui.." 
+            class="form-control"
+            name="password"
+            required="required"
+            />
+          </div>
+          </div>
+          <div class="form-group">
             <button type="submit" class="btn btn-primary btn-block">
-              Log in
+              Ingresar
             </button>
           </div>
         </form>
+        <div class="col-12 forgot">
+            <a href="#"> Vulcan logistics s.a. de c.v. </a>
+        </div>
       </div>
     </main>
 

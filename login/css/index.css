@@ -1,3 +1,71 @@
+body{
+   background: url(../img/background.jpg) no-repeat center center fixed;
+   background-size: cover;
+}
+
+.modal-content{
+    width: 340px;
+    margin: 100px auto;
+    background-color: #3b4652;
+    opacity: .95;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.modal-content h2, label{
+    color: white;
+}
+
+.user-img{
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+
+.user-img img{
+    width: 200px;
+    height: 110px;
+    margin-left: 30px;
+    box-shadow: 0px 0px 0px #848484;
+    border-radius: 50%;
+}
+
+.forgot{
+    padding: 5px 0;
+    text-align: center;
+}
+
+.forgot a{
+    color: white;
+     font-size:22px;
+    /*font-family: 'Press Start 2P', cursive;
+    font-family: 'Monoton', cursive;*/
+    font-family: 'Bad Script', cursive;
+}
+
+.form-group input{
+    height: 42px;
+    font-size: 18px;
+    border:0;
+    padding-left: 54px;
+    border-radius: 5px;
+}
+
+.form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 28px;
+    font-size: 22px;
+    padding-top:4px;
+}
+
+.form-group#user-group::before{
+    content: "\f007";
+}
+
+.form-group#contrasena-group::before{
+    content: "\f023";
+}
+
 #department-select {
 	display: none;
 }
