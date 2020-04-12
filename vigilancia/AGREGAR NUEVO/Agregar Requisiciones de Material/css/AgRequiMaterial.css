@@ -3,6 +3,17 @@ body{
    background-size: cover;
 }
 
+header{
+  background-color: #024959;
+  border: 1px solid #024959;
+}
+
+header a{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
 .contenedor{
     width:90%;
     margin:0 auto;
@@ -21,6 +32,10 @@ body{
     opacity: .85;
     padding: 0 20px;
     box-shadow: 0px 0px 3px #848484;
+}
+
+.modal-content label{
+    color: white;
 }
 
 .btn-ingresar{
@@ -49,12 +64,12 @@ body{
 
 .titulos{
      color: white;
-     font-size:3vw;
+     font-size:2.5vw;
     font-family: 'Press Start 2P', cursive;
     /*font-family: 'Monoton', cursive;
     font-family: 'Bad Script', cursive;*/  
 }
 
 .form-group{
-    margin-top:8%;
+    margin-top:5%;
 }
