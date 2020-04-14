@@ -65,9 +65,9 @@ header a{
 .titulos{
      color: white;
      font-size:3vw;
+     /*font-family: 'Bad Script', cursive; 
     font-family: 'Press Start 2P', cursive;
-    /*font-family: 'Monoton', cursive;
-    font-family: 'Bad Script', cursive;*/  
+    font-family: 'Monoton', cursive;*/
 }
 
 .form-group{
