@@ -8,6 +8,17 @@ body{
 	padding:0; 
 }
 
+header{
+  background-color: #024959;
+  border: 1px solid #024959;
+}
+
+.titulo{
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .agregar{
 	width:10%;
 	height:10%;
@@ -62,22 +73,25 @@ section ul li a:hover {
     padding: 0;
 }
 
-.margen-tit{
+.margen-bus{
 	margin-top: 50px;
 }
 
-.titulo-pag{
-	text-align: center;
+.buscar{
 	color: white;
-	margin-bottom:30px;
+	margin-bottom:20px;
 	display: block;
 	float: left;
-	margin-left: 32%;
-	width: 35%;
+	margin-left: 8%;
 }
 
-.tam{
-	font-size: 3vw;
+.buscar h3{
+	font-size: 1.8vw;
+}
+
+.buscarinput{
+	float:left;
+	margin-right: 20px; 
 }
 
 .fecha{

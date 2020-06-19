@@ -8,14 +8,8 @@ body{
 	padding:0; 
 }
 
-header{
-  background-color: #024959;
-  border: 1px solid #024959;
-}
-
 .titulo{
     color: white;
-    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -74,12 +68,11 @@ section ul li a:hover {
 }
 
 .margen-bus{
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .buscar{
 	color: white;
-	margin-bottom:20px;
 	display: block;
 	float: left;
 	margin-left: 8%;
@@ -95,7 +88,6 @@ section ul li a:hover {
 }
 
 .fecha{
-	margin-top: 10px;
 	margin-left: 8%;
 }
 
@@ -154,6 +146,10 @@ header nav{
 	max-width:1250px;
 	margin:20px auto;
 	background:#024959;
+}
+
+header nav li{
+	margin: 0 6%;
 }
 
 .menu-bar{
@@ -230,13 +226,10 @@ td, th{
 		border-bottom:1px solid rgba(255,255,255, .3);
 	}
 
-	.titulo-pag{
-	margin-bottom:5px;
+	.buscar h3{
+	font-size: 3vw;
 	}
 
-	.tam{
-	font-size: 4vw;
-	}
 
 	.agregar{
 	width:20%;
@@ -269,6 +262,10 @@ td, th{
 	 .menu-bar span {
 	 	float:right;
 	 	font-size:30px;
+	 }
+
+	 .fecha{
+	 	margin-top: -40px;
 	 }
 
 	 .fecha h3, .filtros h3{

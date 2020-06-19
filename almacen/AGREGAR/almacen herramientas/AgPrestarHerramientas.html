@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/AgAlmacenHerramientas.css">
+
+     <!-- iconos moon -->
+    <link rel="stylesheet" href="../../../iconos/fonts/style.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+<header>
+    <a href="../../almacen herramientas.html"> <span class="icon-arrow-left"> Regresar </a>
+</header>
+
+<body>
+	<div class="contenedor">
+		<div class="modal-dialog">
+        	<div class="main-section">
+            	<div class="modal-content">
+            		<div class="col-12 forgot">
+                    	<h1 class="col-12 titulos text-center">Prestar Herramentas</h1>
+                	</div>
+            		<form class="col-12">
+                        <div class="form-group">
+                            <label for="title">Id</label>
+                            <input type="text" class="form-control" placeholder="1" name="Id" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Escane la herramienta</label>
+                            <input type="file" class="form-control" placeholder="Herramenta" required="required" name="Herramenta"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Escane identificacion del empleado</label>
+                            <input type="file" class="form-control" placeholder="Empleado" required="required" name="Empleado"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Area</label>
+                            <input type="text" class="form-control" placeholder="Area" required="required" name="Area" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Fecha de prestamo</label>
+                            <input type="date" class="form-control" min="2020-01-1" required="required" name="fecha" readonly/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Estado</label>
+                            <input type="text" class="form-control" placeholder="Prestado" required="required" name="Estado" readonly />
+                        </div>
+                        <div class="text-center">
+                        <a href="#" button type="submit" class="btn btn-primary btn-ingresar"> <i class="fas fa-sign-in-alt icon-ing"> </i>  Modificar</a>
+                        </div>
+                    </form>
+                	<div class="col-12 forgot text-center">
+                    	<a href="#"> Vulcan logistics s.a. de c.v. </a>
+                	</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

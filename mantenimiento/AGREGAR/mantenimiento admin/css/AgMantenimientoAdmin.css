@@ -1,0 +1,75 @@
+body{
+   background: url(../img/background.jpg) no-repeat center center fixed;
+   background-size: cover;
+}
+
+header{
+  background-color: #024959;
+  border: 1px solid #024959;
+}
+
+header a{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.contenedor{
+    width:90%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.main-section{
+    width:100%;
+    margin:0 auto;
+    margin-top:25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.modal-content label{
+    color: white;
+}
+
+.btn-ingresar{
+    margin:0 auto;
+    margin-top:5%;
+    margin-bottom:5%;
+    width: 150px;
+    height: 40px;
+}
+
+.icon-ing{
+   margin-right:5%; 
+}
+
+.forgot{
+    padding: 5px 0;
+}
+
+.forgot a{
+    color: white;
+     font-size:2.5vw;
+    /*font-family: 'Press Start 2P', cursive;
+    font-family: 'Monoton', cursive;*/
+    font-family: 'Bad Script', cursive;
+}
+
+.titulos{
+     color: white;
+     font-size:3vw;
+     /*font-family: 'Bad Script', cursive; 
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Monoton', cursive;*/
+}
+
+.form-group{
+    margin-top:5%;
+}

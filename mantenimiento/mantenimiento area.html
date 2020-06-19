@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
 
      <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/compras admin.css">
+    <link rel="stylesheet" type="text/css" href="css/mantenimiento area.css">
 
     <!-- meta vp -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -33,7 +33,7 @@
 
  <header>
     <div class="titulo">
-        <h1>Compras Admin</h1>
+        <h1>Mantenimiento Area</h1>
     </div>
 
     <!--<div class="menu-bar">
@@ -61,7 +61,7 @@
         </div>
         <div>
             <ul class="agregar quit-p">
-                <li><a href="AGREGAR/compras admin/AgComprasAdmin.html"><span class="icon-add_circle">  Agregar</a></li>
+                <li><a href="AGREGAR/mantenimiento area/AgMantenimientoArea.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
     </section>
@@ -78,10 +78,9 @@
     	<div class="filtros">
     		<h3>Filtrar por:</h3>
     		<h3><input type="checkbox" name="Id"> Id </h3>
-    		<h3><input type="checkbox" name="Articulo"> Articulo </h3>
-    		<h3><input type="checkbox" name="Area"> Area </h3>
-    		<h3><input type="checkbox" name="Estado"> Pagado </h3>
-            <h3><input type="checkbox" name="Estado"> Adeudo </h3>
+            <h3><input type="checkbox" name="Solicitante"> Solicitante </h3>
+    		<h3><input type="checkbox" name="Estado"> Pendiente </h3>
+            <h3><input type="checkbox" name="Estado"> Listo </h3>
     		<h4 button type="submit" class="btn btn-primary btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
     	</div>
     </section>
@@ -91,69 +90,46 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Articulo</th>
-                    <th>Cantidad</th>
-                    <th>Total $</th>
-                    <th>Fecha</th>
-                    <th>Area</th>
-                    <th>Comprador</th>
+                    <th>Orden de Mantenimiento</th>
+                    <th>Descripcion</th>
+                    <th>Nombre Solicitante</th>
+                    <th>Fecha de Solicitud</th>
                     <th>Estado</th>
-                    <th>Foto Ticket</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Articulo">Soldadura</td>
-                    <td data-titulo="Cantidad">5 kg</td>
-                    <td data-titulo="Total $">5000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">planta beneficio</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">Pagado</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Orden">trit11025</td>
+                    <td data-titulo="DescripcionSol">Solicito reparacion de la tolba ya que tira agua en la parte 1</td>
+                    <td data-titulo="Solicitante">Ever</td>
+                    <td data-titulo="FechaSol">16/03/2020</td>
+                    <td bgcolor="red" data-titulo="Estado">Pendiente</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Articulo">bandas</td>
-                    <td data-titulo="Cantidad">4</td>
-                    <td data-titulo="Total $">8000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">trituracion</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">adeudo</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Orden">trit11026</td>
+                    <td data-titulo="DescripcionSol">Solicito reparacion de la tolba ya que tira agua en la parte 1</td>
+                    <td data-titulo="Solicitante">mario</td>
+                    <td data-titulo="FechaSol">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Estado">listo</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
-                    <td data-titulo="Articulo">cascos</td>
-                    <td data-titulo="Cantidad">5</td>
-                    <td data-titulo="Total $">2000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">vigilancia</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">adeudo</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Orden">trit11027</td>
+                    <td data-titulo="DescripcionSol">Solicito reparacion de la tolba ya que tira agua en la parte 1</td>
+                    <td data-titulo="Solicitante">Ever</td>
+                    <td data-titulo="FechaSol">16/03/2020</td>
+                    <td bgcolor="red" data-titulo="Estado">Pendiente</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
-                    <td data-titulo="Articulo">tubo de cobre 1 pugada</td>
-                    <td data-titulo="Cantidad">6</td>
-                    <td data-titulo="Total $">600</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">planta beneficio</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">Pagado</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
-                </tr>                
+                    <td data-titulo="Orden">trit11028</td>
+                    <td data-titulo="DescripcionSol">Solicito reparacion de la tolba ya que tira agua en la parte 1</td>
+                    <td data-titulo="Solicitante">mario</td>
+                    <td data-titulo="FechaSol">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Estado">listo</td>
+                </tr>     
             </tbody>
         </table>
 

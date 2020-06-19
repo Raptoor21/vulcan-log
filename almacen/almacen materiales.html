@@ -1,3 +1,4 @@
+<!--aqui solo se llevara un registro de los materiales que se han entregado -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
 
      <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/compras admin.css">
+    <link rel="stylesheet" type="text/css" href="css/almacen materiales.css">
 
     <!-- meta vp -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -32,24 +33,21 @@
 </head>
 
  <header>
-    <div class="titulo">
-        <h1>Compras Admin</h1>
-    </div>
-
-    <!--<div class="menu-bar">
+    <div class="menu-bar">
         <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
     </div>
         <nav>
              <ul>
-                <li><a href="../inicio/vigilancia.html"><span class="icon-truck">  Vigilancia</a></li>
-                <li><a href="../registro de Mineral/registro de Mineral.html"><span class="icon-diamond">  Patio de Concentrado</a></li>
-                <li><a href="../tickets de combustibles/tickets de combustibles.html"><span class="icon-local_gas_station">  Trituracion</a></li>  
-                <li><a href="../requisiciones de material/requisiciones de material.html"><span class="icon-file-text">  Laboratorio</a></li>
-                <li><a href="../entrega de materiales/entrega de materiales.html"><span class="icon-enter">  Planta beneficio</a></li>
-                <li><a href="compras.html"><span class="icon-cart">  Almacen</a></li>
-                <li><a href="compras.html"><span class="icon-cart">  Mantenimiento</a></li>
+                <li><a href="almacen herramientas.html"><span class="icon-wrench">  Herramientas</a></li>
+                <li><a href="almacen materiales.html"><span class="icon-diamond">  Materiales</a></li>
+                <li><a href="almacen inventario.html"><span class="icon-clipboard">  Inventario</a></li>  
+                <li><a href="../compras/compras.html"><span class="icon-cart">  Compras</a></li>
             </ul>
-        </nav>-->
+        </nav>
+
+    <div class="titulo">
+        <h1>Materiales</h1>
+    </div>
 </header>  
 
 <body>
@@ -61,7 +59,12 @@
         </div>
         <div>
             <ul class="agregar quit-p">
-                <li><a href="AGREGAR/compras admin/AgComprasAdmin.html"><span class="icon-add_circle">  Agregar</a></li>
+                <li><a href="hospital.html"><span class="icon-add_circle">  Agregar</a>
+                    <ul class="quit-p submenu">
+                        <li><a href="AGREGAR/almacen materiales/AgRegistrarMateriales.html"><span class="icon-arrow-right">  REGISTRAR</a></li>
+                        <li><a href="AGREGAR/almacen materiales/AgEntregarMateriales.html"><span class="icon-arrow-left">  ENTREGAR</a></li>
+                    </ul> 
+                </li>
             </ul>
         </div>
     </section>
@@ -78,10 +81,9 @@
     	<div class="filtros">
     		<h3>Filtrar por:</h3>
     		<h3><input type="checkbox" name="Id"> Id </h3>
-    		<h3><input type="checkbox" name="Articulo"> Articulo </h3>
+    		<h3><input type="checkbox" name="Material"> Material </h3>
+            <h3><input type="checkbox" name="Empleado"> Empleado </h3>
     		<h3><input type="checkbox" name="Area"> Area </h3>
-    		<h3><input type="checkbox" name="Estado"> Pagado </h3>
-            <h3><input type="checkbox" name="Estado"> Adeudo </h3>
     		<h4 button type="submit" class="btn btn-primary btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
     	</div>
     </section>
@@ -91,69 +93,62 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Articulo</th>
+                    <th>Material</th>
                     <th>Cantidad</th>
-                    <th>Total $</th>
-                    <th>Fecha</th>
+                    <th>Nombre Empleado</th>
                     <th>Area</th>
-                    <th>Comprador</th>
-                    <th>Estado</th>
-                    <th>Foto Ticket</th>
+                    <th>Fecha Entrega</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Articulo">Soldadura</td>
-                    <td data-titulo="Cantidad">5 kg</td>
-                    <td data-titulo="Total $">5000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Material">Soldadura</td>
+                    <td data-titulo="Cantidad">2 kg</td>
+                    <td data-titulo="Empleado">Mario</td>
                     <td data-titulo="Area">planta beneficio</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">Pagado</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Fecha">16/03/2020</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Articulo">bandas</td>
-                    <td data-titulo="Cantidad">4</td>
-                    <td data-titulo="Total $">8000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">trituracion</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">adeudo</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Material">tuberia de cobre 1 pulgada</td>
+                    <td data-titulo="Cantidad">3</td>
+                    <td data-titulo="Empleado">eber</td>
+                    <td data-titulo="Area">planta beneficio</td>
+                    <td data-titulo="Fecha">19/02/2020</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
-                    <td data-titulo="Articulo">cascos</td>
-                    <td data-titulo="Cantidad">5</td>
-                    <td data-titulo="Total $">2000</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Area">vigilancia</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">adeudo</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
+                    <td data-titulo="Material">tuberia de cobre 1/2 pulgada</td>
+                    <td data-titulo="Cantidad">2</td>
+                    <td data-titulo="Empleado">eder</td>
+                    <td data-titulo="Area">Trituracion</td>
+                    <td data-titulo="Fecha">6/04/2020</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
-                    <td data-titulo="Articulo">tubo de cobre 1 pugada</td>
-                    <td data-titulo="Cantidad">6</td>
-                    <td data-titulo="Total $">600</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Material">cinta de aislar</td>
+                    <td data-titulo="Cantidad">1</td>
+                    <td data-titulo="Empleado">geovanny</td>
+                    <td data-titulo="Area">vigilancia</td>
+                    <td data-titulo="Fecha">1/01/2020</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">5</td>
+                    <td data-titulo="Material">Soldadura</td>
+                    <td data-titulo="Cantidad">3 kg</td>
+                    <td data-titulo="Empleado">Mario</td>
                     <td data-titulo="Area">planta beneficio</td>
-                    <td data-titulo="Comprador">Gustavo</td>
-                    <td data-titulo="Estado">Pagado</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
-                </tr>                
+                    <td data-titulo="Fecha">14/04/2020</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">6</td>
+                    <td data-titulo="Material">reactivo</td>
+                    <td data-titulo="Cantidad">2 kg</td>
+                    <td data-titulo="Empleado">alonso</td>
+                    <td data-titulo="Area">laboratorio</td>
+                    <td data-titulo="Fecha">22/05/2020</td>
+                </tr>         
             </tbody>
         </table>
 

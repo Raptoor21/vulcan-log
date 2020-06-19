@@ -19,7 +19,26 @@ header{
     text-align: center;
 }
 
+
 .agregar{
+	width:10%;
+	height:10%;
+	background:#024959;
+	float: right;
+	margin-right: 4%;
+	display: block;
+	position: relative;
+}
+
+.agregar li a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.8vw;
+
+}
+
+.compras{
 	width:10%;
 	height:10%;
 	background:#024959;
@@ -29,7 +48,7 @@ header{
 	position: relative;
 }
 
-.agregar li a {
+.compras li a {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -206,7 +225,7 @@ table{
 	border-collapse: collapse;
 	background-color: #3b4652;
     margin:0 auto;
-    width: 85%;
+    width: 95%;
 }
 
 td, th{
@@ -244,6 +263,15 @@ td, th{
 	}
 
 	.agregar li a {
+	font-size: 3vw;
+	}
+
+	.compras{
+	width:20%;
+	height:20%;
+   	}
+
+	.compras li a {
 	font-size: 3vw;
 	}
 
