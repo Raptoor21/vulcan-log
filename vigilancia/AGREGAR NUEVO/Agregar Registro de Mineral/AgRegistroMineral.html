@@ -47,22 +47,67 @@
                             <label for="title">Id</label>
                         	<input type="text" class="form-control" placeholder="Id" required="required" name="Id"/>
                     	</div>
+                        <div class="form-group">
+                            <label for="title">fecha de llegada</label>
+                            <input type="date" class="form-control" min="2020-01-1" required="required" name="fecha" readonly />
+                        </div>
+                        <div id="user-type-select" class="form-group">
+                            <label for="title">Mina</label>
+                            <select class="form-control" name="user-type" required="required" onchange="setValue()">
+                                <option value="" selected>Seleccione uno</option>
+
+                                <option value="PENDIENTE">Mina 1</option>
+                                <option value="PROCESANDO">Mina 6</option>
+                                <option value="TERMINADO">Jales</option>
+                                <option value="TERMINADO">Mina Spot</option>
+                                <option value="TERMINADO">Mina 5</option>
+                            </select>
+                        </div>
                     	<div class="form-group">
-                            <label for="title">Ingresa el Nombre del Usuario</label>
+                            <label for="title">Ticket</label>
                         	<input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
                     	</div>
                     	<div class="form-group">
-                            <label for="title">Ingresa la fecha de llegada</label>
-                        	<input type="date" class="form-control" min="2020-01-1" required="required" name="fecha"/>
-                    	</div>
-                    	<div class="form-group">
-                            <label for="title">Ingresa el Nombre del Usuario</label>
+                            <label for="title">Tonelada Metrica Humeda</label>
                         	<input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
                     	</div>
                     	<div class="form-group">
-                            <label for="title">Ingresa el Nombre del Usuario</label>
+                            <label for="title">Humedad</label>
                         	<input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
                     	</div>
+                        <div class="form-group">
+                            <label for="title">Tonelada Metrica Seca</label>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Placas Camion</label>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Condutor</label>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Peso Neto</label>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Tara</label>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario" required="required" name="user-name"/>
+                        </div>
+                        <div id="user-type-select" class="form-group">
+                            <label for="title">Estado</label>
+                            <select class="form-control" name="user-type" required="required" onchange="setValue()">
+                                <option value="" selected>Seleccione uno</option>
+
+                                <option value="PENDIENTE">Pagado</option>
+                                <option value="PROCESANDO">Pendiente</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Foto ticket</label>
+                            <input type="file" class="form-control" required="required" name="user-name"/>
+                        </div>
                         <div class="text-center">
                     	<a href="#" button type="submit" class="btn btn-primary btn-ingresar"> <i class="fas fa-sign-in-alt icon-ing"> </i>  Enviar</a>
                         </div>

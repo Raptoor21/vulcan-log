@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+    <meta charset="UTF-8">
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- iconos moon -->
+    <link rel="stylesheet" href="../../iconos/fonts/style.css">
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/SeguimientoLotes.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+<header>
+
+    <div class="titulo">
+        <h1>Seguimiento de Lotes</h1>
+    </div>
+
+</header>
+
+<body>
+
+    <section class="margen-bus">
+        <div class="buscar">
+            <h3 class="buscarinput">Buscar por id</h3>
+            <input class="taminput" type="text" name="buscar">
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Vigilancia Estado</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                    <th>Trituracion Estado</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                    <th>Planta Estado</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                    <th>Patio Estado</th>
+                    <th>Fecha Entrada</th>
+                    <th>Fecha Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-titulo="Id">100</td>
+                    <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Trituracion Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">18/03/2020</td>
+                    <td bgcolor="green" data-titulo="Planta Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">18/03/2020</td>
+                    <td data-titulo="Fecha Salida">20/03/2020</td>
+                    <td bgcolor="green" data-titulo="Patio Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">20/03/2020</td>
+                    <td data-titulo="Fecha Salida">25/03/2020</td>
+                </tr>
+
+                <tr>
+                    <td data-titulo="Id">101</td>
+                    <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Trituracion Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">18/03/2020</td>
+                    <td bgcolor="green" data-titulo="Planta Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">18/03/2020</td>
+                    <td data-titulo="Fecha Salida">20/03/2020</td>
+                    <td bgcolor="Blue" data-titulo="Patio Estado">Listo para entrega</td>
+                    <td data-titulo="Fecha Entrada">20/03/2020</td>
+                    <td data-titulo="Fecha Salida">00/00/0000</td>
+                </tr>
+
+                <tr>
+                    <td data-titulo="Id">102</td>
+                    <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Trituracion Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">18/03/2020</td>
+                    <td bgcolor="green" data-titulo="Planta Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">18/03/2020</td>
+                    <td data-titulo="Fecha Salida">20/03/2020</td>
+                    <td bgcolor="yellow" data-titulo="Patio Estado">En Proceso 2</td>
+                    <td data-titulo="Fecha Entrada">20/03/2020</td>
+                    <td data-titulo="Fecha Salida">00/00/0000</td>
+                </tr>
+
+                <tr>
+                    <td data-titulo="Id">103</td>
+                    <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Trituracion Estado">Entregado</td>
+                    <td data-titulo="Fecha Entrada">16/03/2020</td>
+                    <td data-titulo="Fecha Salida">18/03/2020</td>
+                    <td bgcolor="yellow" data-titulo="Planta Estado">Recivido</td>
+                    <td data-titulo="Fecha Entrada">18/03/2020</td>
+                    <td data-titulo="Fecha Salida">20/03/2020</td>
+                    <td bgcolor="red" data-titulo="Patio Estado">Sin Recivir</td>
+                    <td data-titulo="Fecha Entrada">00/00/0000</td>
+                    <td data-titulo="Fecha Salida">00/00/0000</td>
+                </tr>                
+            </tbody>
+        </table>
+
+        <div class="margen-btn-tabla">
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        </div>
+    </section> 
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+<footer>
+	<div class="col-12 forgot">
+        <h2> Vulcan logistics s.a. de c.v </h2>
+    </div>
+</footer>
+
+</html>
