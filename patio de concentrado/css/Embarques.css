@@ -1,11 +1,17 @@
 body{
    background: url(../img/background.jpg) no-repeat center center fixed;
    background-size: cover;
+   width:150%;
 }
 
 *{
 	margin:0;
 	padding:0; 
+}
+
+header{
+  background-color: #024959;
+  border: 1px solid #024959;
 }
 
 .titulo{
@@ -14,36 +20,17 @@ body{
     text-align: center;
 }
 
-
 .agregar{
 	width:10%;
 	height:10%;
 	background:#024959;
 	float: right;
-	margin-right: 10%;
+	margin-right: 40%;
 	display: block;
 	position: relative;
 }
 
 .agregar li a {
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
-	font-size: 1.7vw;
-
-}
-
-.compras{
-	width:10%;
-	height:10%;
-	background:#024959;
-	float: right;
-	margin-right: 8%;
-	display: block;
-	position: relative;
-}
-
-.compras li a {
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
@@ -156,7 +143,7 @@ section ul li a:hover {
 }
 
 .margen-btn-tabla{
-	margin:0 15%;
+	margin:0 29%;
 }
 
 header{
@@ -205,7 +192,7 @@ header nav ul li a {
 }
 
 header nav ul li span {
-	margin-left:140px;
+	margin-left:10px;
 }
 
 header nav ul li a:hover {
@@ -220,7 +207,7 @@ table{
 	border-collapse: collapse;
 	background-color: #3b4652;
     margin:0 auto;
-    width: 95%;
+    width: 85%;
 }
 
 td, th{
@@ -229,7 +216,7 @@ td, th{
 	border: 1px solid white;
 }
 
-@media screen and (max-width:900px ){
+@media screen and (max-width:800px ){
 	header nav {
 		width:80%;
 		height:100%;
@@ -258,15 +245,6 @@ td, th{
 	}
 
 	.agregar li a {
-	font-size: 3vw;
-	}
-
-	.compras{
-	width:20%;
-	height:20%;
-   	}
-
-	.compras li a {
 	font-size: 3vw;
 	}
 
@@ -323,12 +301,7 @@ td, th{
 
 }
 
-@media screen and (max-width:1150px ){
-
-	header nav ul li span {
-	margin-left:100px;
-	}
-
+@media screen and (max-width:1080px ){
 	 table{
 	 	width: 100%;
 	 	background: no-repeat;

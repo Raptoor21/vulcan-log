@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/AgEmbarques.css">
+
+     <!-- iconos moon -->
+    <link rel="stylesheet" href="../../../iconos/fonts/style.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+<header>
+    <a href="../Embarques.html"> <span class="icon-arrow-left"> Regresar </a>
+</header>
+
+<body>
+	<div class="contenedor">
+		<div class="modal-dialog">
+        	<div class="main-section">
+            	<div class="modal-content">
+            		<div class="col-12 forgot">
+                    	<h1 class="col-12 titulos text-center">Patio De Concentrado</h1>
+                	</div>
+            		<form class="col-12">
+                    	<div class="form-group">
+                            <label for="title">Id</label>
+                        	<input type="text" class="form-control" placeholder="1" name="Id" readonly />
+                    	</div>
+                        <div class="form-group">
+                            <label for="title">fecha de Salida</label>
+                            <input type="text" class="form-control" placeholder="25/03/2020" required="required" name="fechaSal" readonly />
+                        </div>
+
+                        <h2 class="subtitulo">EMBARQUES</h2>
+
+                    	<div class="form-group">
+                            <label for="title">No.Embarque</label>
+                        	<input type="text" class="form-control" placeholder="No.Embarque" name="No.Embarque"/>
+                    	</div>
+                        <div class="form-group">
+                            <label for="title">Descripcion</label>
+                            <input type="text" class="form-control" placeholder="Descripcion" required="required" name="Descripcion"/>
+                        </div>
+                         <div class="form-group">
+                            <label for="title">Peso Salida TMH</label>
+                            <input type="text" class="form-control" placeholder="TMH" required="required" name="TMH"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Peso Salida HUM</label>
+                            <input type="text" class="form-control" placeholder="HUM" required="required" name="HUM"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Peso Salida TMS</label>
+                            <input type="text" class="form-control" placeholder="TMS" required="required" name="TMS"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora TMH</label>
+                            <input type="text" class="form-control" placeholder="THM" required="required" name="THM"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora % HUM</label>
+                            <input type="text" class="form-control" placeholder="%HUM" required="required" name="%HUM"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora % MERMA</label>
+                            <input type="text" class="form-control" placeholder="%MERMA" required="required" name="%MERMA"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora TMS</label>
+                            <input type="text" class="form-control" placeholder="TMS" required="required" name="TMS"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora AU gr/ton</label>
+                            <input type="text" class="form-control" placeholder="AU gr/ton" required="required" name="AU"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora AG kg/ton</label>
+                            <input type="text" class="form-control" placeholder="AG kg/ton" required="required" name="AG"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora PB %</label>
+                            <input type="text" class="form-control" placeholder="PB %" required="required" name="PB"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Datos Trifugadora ZN %</label>
+                            <input type="text" class="form-control" placeholder="ZN %" required="required" name="ZN"/>
+                        </div>
+
+                        <h2 class="subtitulo">CONTENIDO DE EMBARQUE</h2>
+
+                        <div class="form-group">
+                            <label for="title">Contenido de Embarque</label>
+                            <input type="text" class="form-control" placeholder="Contenido de Embarque" required="required" name="ContEmbarque"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">TMH</label>
+                            <input type="text" class="form-control" placeholder="THM" required="required" name="THM"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">% HUM</label>
+                            <input type="text" class="form-control" placeholder="%HUM" required="required" name="%HUM"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">TMS</label>
+                            <input type="text" class="form-control" placeholder="TMS" required="required" name="TMS"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">AU gr/ton</label>
+                            <input type="text" class="form-control" placeholder="AU gr/ton" required="required" name="AU"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">AG kg/ton</label>
+                            <input type="text" class="form-control" placeholder="AG kg/ton" required="required" name="AG"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">PB %</label>
+                            <input type="text" class="form-control" placeholder="PB %" required="required" name="PB"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">ZN %</label>
+                            <input type="text" class="form-control" placeholder="ZN %" required="required" name="ZN"/>
+                        </div>
+
+                        <h2 class="subtitulo">LEYES AVISADAS A TRIFUGA</h2>
+
+                        <div class="form-group">
+                            <label for="title">AU gr/ton</label>
+                            <input type="text" class="form-control" placeholder="AU gr/ton" required="required" name="AU"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">AG kg/ton</label>
+                            <input type="text" class="form-control" placeholder="AG kg/ton" required="required" name="AG"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">PB %</label>
+                            <input type="text" class="form-control" placeholder="PB %" required="required" name="PB"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">ZN %</label>
+                            <input type="text" class="form-control" placeholder="ZN %" required="required" name="ZN"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">OBSERVACIONES</label>
+                            <input type="text" class="form-control" placeholder="Observaciones" name="OBSERVACIONES" />
+                        </div>
+                        <div class="text-center">
+                    	<a href="#" button type="submit" class="btn btn-primary btn-ingresar"> <i class="fas fa-sign-in-alt icon-ing"> </i>  Enviar</a>
+                        </div>
+                	</form>
+                	<div class="col-12 forgot text-center">
+                    	<a href="#"> Vulcan logistics s.a. de c.v. </a>
+                	</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

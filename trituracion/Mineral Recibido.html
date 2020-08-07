@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+    <meta charset="UTF-8">
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- iconos moon -->
+    <link rel="stylesheet" href="../iconos/fonts/style.css">
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/Material Recibido.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+ <header>
+    <div class="titulo">
+        <h1>Material Recibido</h1>
+    </div>
+
+    <!--<div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="../inicio/vigilancia.html"><span class="icon-truck">  Vigilancia</a></li>
+                <li><a href="../registro de Mineral/registro de Mineral.html"><span class="icon-diamond">  Patio de Concentrado</a></li>
+                <li><a href="../tickets de combustibles/tickets de combustibles.html"><span class="icon-local_gas_station">  Trituracion</a></li>  
+                <li><a href="../requisiciones de material/requisiciones de material.html"><span class="icon-file-text">  Laboratorio</a></li>
+                <li><a href="../entrega de materiales/entrega de materiales.html"><span class="icon-enter">  Planta beneficio</a></li>
+                <li><a href="compras.html"><span class="icon-cart">  Almacen</a></li>
+                <li><a href="compras.html"><span class="icon-cart">  Mantenimiento</a></li>
+            </ul>
+        </nav>-->
+</header>  
+
+<body>
+
+    <section class="margen-bus">
+        <div class="buscar">
+            <h3 class="buscarinput">Buscar</h3>
+            <input type="text" name="buscar">
+        </div>
+        <div>
+            <ul class="agregar quit-p">
+                <li><a href="AGREGAR/AgMineralRecibido.html"><span class="icon-add_circle">  Agregar</a></li>
+            </ul>
+        </div>
+    </section>
+
+    	<p>.</p>
+
+    <section>
+    	<div class="fecha">
+    		<h3> Filtrar fecha de 
+    		<input type="date" name="fecha" min="2020-01-1">
+            a <input type="date" name="fecha" min="2018-03-25">
+            </h3>
+    	</div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fecha</th>
+                    <th>Mina</th>
+                    <th>Ticket</th>
+                    <th>TMH</th>
+                    <th>HUM</th>
+                    <th>TMS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-titulo="Id">1</td>
+                    <td data-titulo="Fecha">01/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3221</td>
+                    <td data-titulo="TMH">22.9</td>
+                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="TMS">22.21</td>
+                </tr>
+               <tr>
+                    <td data-titulo="Id">2</td>
+                    <td data-titulo="Fecha">01/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3223</td>
+                    <td data-titulo="TMH">22.86</td>
+                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="TMS">22.17</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">3</td>
+                    <td data-titulo="Fecha">02/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3226</td>
+                    <td data-titulo="TMH">19.17</td>
+                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="TMS">18.59</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">4</td>
+                    <td data-titulo="Fecha">03/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3230</td>
+                    <td data-titulo="TMH">21.12</td>
+                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="TMS">20.49</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="margen-btn-tabla">
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        </div>
+    </section> 
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+<footer>
+	<div class="col-12 forgot">
+        <h2> Vulcan logistics s.a. de c.v </h2>
+    </div>
+</footer>
+
+</html>

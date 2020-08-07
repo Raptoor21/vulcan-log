@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/MdTrituracion.css">
+
+     <!-- iconos moon -->
+    <link rel="stylesheet" href="../../../iconos/fonts/style.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+<header>
+    <a href="../Trituracion.html"> <span class="icon-arrow-left"> Regresar </a>
+</header>
+
+<body>
+	<div class="contenedor">
+		<div class="modal-dialog">
+        	<div class="main-section">
+            	<div class="modal-content">
+            		<div class="col-12 forgot">
+                    	<h1 class="col-12 titulos text-center">Trituracion</h1>
+                	</div>
+            		<form class="col-12">
+                    	<div class="form-group">
+                            <label for="title">Id</label>
+                        	<input type="text" class="form-control" placeholder="4" name="Id" readonly />
+                    	</div>
+                         <div class="form-group">
+                            <label for="title">fecha de ingreso</label>
+                            <input type="text" class="form-control" placeholder="25/03/2020" required="required" name="fechaIng" readonly />
+                        </div>
+                    	<div class="form-group">
+                            <label for="title">Mina</label>
+                        	<input type="text" class="form-control" placeholder="Jales" name="Mina" readonly />
+                    	</div>
+                        <div class="form-group">
+                            <label for="title">Ticket</label>
+                            <input type="text" class="form-control" placeholder="543" name="Ticket" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Nombre de quien recibe</label>
+                            <input type="text" class="form-control" placeholder="ever" required="required" name="Nombre" readonly />
+                        </div>
+                    	<div id="user-type-select" class="form-group">
+                            <label for="title">Estado Triturado</label>
+                            <select class="form-control" name="user-type" required="required" onchange="setValue()">
+                                <option value="" selected>PROCESANDO</option>
+
+                                <option value="PENDIENTE">PENDIENTE</option>
+                                <option value="PROCESANDO">PROCESANDO</option>
+                                <option value="TERMINADO">TERMINADO</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title">fecha de terminado de Triturado</label>
+                            <input type="text" class="form-control" placeholder="28/03/2020" required="required" name="fechaTri" readonly />
+                        </div>
+                        <div id="user-type-select" class="form-group">
+                            <label for="title">Entregado a Molienda</label>
+                            <select class="form-control" name="user-type" required="required" onchange="setValue()">
+
+                                <option value="PENDIENTE">PENDIENTE</option>
+                                <option value="PROCESANDO">EN PROCESO</option>
+                                <option value="TERMINADO">TERMINADO</option>
+                            </select>
+                        </div>
+                       <div class="form-group">
+                            <label for="title">fecha de Entrega a Molienda</label>
+                            <input type="text" class="form-control" placeholder="00/00/0000" required="required" name="fechaPul" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="title">Peso TMS</label>
+                            <input type="text" class="form-control" placeholder="Peso TMS" name="Peso" />
+                        </div>
+                        <div class="text-center">
+                    	<a href="#" button type="submit" class="btn btn-primary btn-ingresar"> <i class="fas fa-sign-in-alt icon-ing"> </i>  Enviar</a>
+                        </div>
+                	</form>
+                	<div class="col-12 forgot text-center">
+                    	<a href="#"> Vulcan logistics s.a. de c.v. </a>
+                	</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

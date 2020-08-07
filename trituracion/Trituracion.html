@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
 
      <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/patio concentrado.css">
+    <link rel="stylesheet" type="text/css" href="css/Trituracion.css">
 
     <!-- meta vp -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -37,7 +37,8 @@
     </div>
         <nav>
              <ul>
-                <li><a href="Embarques.html"><span class="icon-add_circle">  Embarques</a></li>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Mineral Triturado.html"><span class="icon-add_circle">  Mineral Triturado</a></li>
                 <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
                 <li><a href="../mantenimiento/mantenimiento.html"><span class="icon-wrench">  Mantenimiento</a></li>  
                 <li><a href="../compras/compras.html"><span class="icon-cart">  Compras</a></li>
@@ -45,7 +46,7 @@
         </nav>
 
     <div class="titulo">
-        <h1>Patio De Concentrado</h1>
+        <h1>Trituracion</h1>
     </div>
 </header>  
 
@@ -58,7 +59,7 @@
         </div>
         <div>
             <ul class="agregar quit-p">
-            <li><a href="MODIFICAR/Patio Concentrado/MdPatioConcentrado.html"><span class="icon-add_circle">  Modificar</a></li>
+            <li><a href="MODIFICAR/MdTrituracion.html"><span class="icon-add_circle">  Modificar</a></li>
             </ul>
         </div>
     </section>
@@ -75,10 +76,8 @@
     	<div class="filtros">
     		<h3>Filtrar por:</h3>
     		<h3><input type="checkbox" name="Id"> Id </h3>
-    		<h3><input type="checkbox" name="Lote"> Lote </h3>
+    		<h3><input type="checkbox" name="Mina"> Mina </h3>
             <h3><input type="checkbox" name="Nombre"> Nombre</h3>
-            <h3><input type="checkbox" name="Ingreso"> Ingreso </h3>
-    		<h3><input type="checkbox" name="Salida"> Salida </h3>
     		<h4 button type="submit" class="btn btn-primary btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
     	</div>
     </section>
@@ -88,71 +87,78 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Lote</th>
-                    <th>Quien Recibio</th>
                     <th>Fecha de Ingreso</th>
-                    <th>Secado</th>
+                    <th>Mina</th>
+                    <th>Ticket</th>
+                    <th>Quien Recibio</th>
+                    <th>Triturado</th>
                     <th>Fecha</th>
-                    <th>Pulverizado</th>
+                    <th>Entregado a Molienda</th>
                     <th>Fecha</th>
-                    <th>Peso</th>
-                    <th>Info Enbarque</th>
-                    <th>Fecha de Salida</th>
+                    <th>Peso TMS</th>
                 </tr>
             </thead>
             <tbody>
-                   <tr>
-                    <td data-titulo="Id">4</td>
-                    <td data-titulo="Lote">trit11028</td>
-                    <td data-titulo="Nombre">ever</td>
-                    <td data-titulo="Fecha Ingreso">25/03/2020</td>
-                    <td bgcolor="green" data-titulo="Secado">Terminado</td>
-                    <td data-titulo="Fecha Secado">28/03/2020</td>
-                    <td bgcolor="red" data-titulo="Pulverizado">Pendiente</td>
-                    <td data-titulo="Fecha Pulverizado">00/00/0000</td>
+                <tr>
+                    <td data-titulo="Id">5</td>
+                    <td data-titulo="Fecha Ingreso">26/03/2020</td>
+                    <td data-titulo="Mina">Jales</td>
+                    <td data-titulo="Ticket">544</td>
+                    <td data-titulo="Nombre">Mario</td>
+                    <td bgcolor="red" data-titulo="Triturado">Pendiente</td>
+                    <td data-titulo="Fecha Triturado">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Molienda">Pendiente</td>
+                    <td data-titulo="Fecha Molienda">00/00/0000</td>
                     <td data-titulo="Peso">N/A</td>
-                    <td data-titulo="Info">Sin Entregar</td>
-                    <td data-titulo="Fecha Salida">00/00/0000</td>
-                </tr>  
+                </tr>
+                <tr>
+                    <td data-titulo="Id">4</td>
+                    <td data-titulo="Fecha Ingreso">25/03/2020</td>
+                    <td data-titulo="Mina">Jales</td>
+                    <td data-titulo="Ticket">543</td>
+                    <td data-titulo="Nombre">ever</td>
+                    <td bgcolor="yellow" data-titulo="Triturado">Procesando</td>
+                    <td data-titulo="Fecha Triturado">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Molienda">Pendiente</td>
+                    <td data-titulo="Fecha Molienda">00/00/0000</td>
+                    <td data-titulo="Peso">N/A</td>
+                </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
-                    <td data-titulo="Lote">trit11027</td>
-                    <td data-titulo="Nombre">ever</td>
-                    <td data-titulo="Fecha Ingreso">18/04/2020</td>
-                    <td bgcolor="green" data-titulo="Secado">Terminado</td>
-                    <td data-titulo="Fecha Secado">21/03/2020</td>
-                    <td bgcolor="yellow" data-titulo="Pulverizado">En Proceso</td>
-                    <td data-titulo="Fecha Pulverizado">00/00/0000</td>
-                    <td data-titulo="Peso">N/A</td>
-                    <td data-titulo="Info">Sin entregar</td>
-                    <td data-titulo="Fecha Salida">00/00/0000</td>
-                </tr> 
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3226</td>
+                    <td data-titulo="Nombre">Mario</td>
+                    <td bgcolor="green" data-titulo="Triturado">Terminado</td>
+                    <td data-titulo="Fecha Triturado">17/03/2020</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">18/00/0000</td>
+                    <td data-titulo="Peso">45.81</td>
+                </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Lote">trit11026</td>
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3223</td>
                     <td data-titulo="Nombre">ever</td>
-                    <td data-titulo="Fecha Ingreso">16/04/2020</td>
-                    <td bgcolor="green" data-titulo="Secado">Terminado</td>
-                    <td data-titulo="Fecha Secado">18/04/2020</td>
-                    <td bgcolor="green" data-titulo="Pulverizado">Terminado</td>
-                    <td data-titulo="Fecha Pulverizado">20/04/2020</td>
-                    <td data-titulo="Peso">1 tonelada</td>
-                    <td data-titulo="Info">Entregado al camion 3 con joaquin como chofer con destino a comprador 1</td>
-                    <td data-titulo="Fecha Salida">22/04/2020</td>
-                </tr>  
+                    <td bgcolor="green" data-titulo="Triturado">Terminado</td>
+                    <td data-titulo="Fecha Triturado">16/03/2020</td>
+                    <td bgcolor="green" data-titulo="Molienda">Pendiente</td>
+                    <td data-titulo="Fecha Molienda">17/03/2020</td>
+                    <td data-titulo="Peso">0.00</td>
+                </tr>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Lote">trit11025</td>
-                    <td data-titulo="Nombre">mario</td>
-                    <td data-titulo="Fecha Ingreso">23/03/2020</td>
-                    <td bgcolor="green" data-titulo="Secado">Terminado</td>
-                    <td data-titulo="Fecha Secado">25/03/2020</td>
-                    <td bgcolor="green" data-titulo="Pulverizado">Terminado</td>
-                    <td data-titulo="Fecha Pulverizado">28/03/2020</td>
-                    <td data-titulo="Peso">1 tonelada</td>
-                    <td data-titulo="Info">Entregado al camion 4 con elias como chofer con destino a comprador 3</td>
-                    <td data-titulo="Fecha Salida">30/03/2020</td>
-                </tr>   
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3221</td>
+                    <td data-titulo="Nombre">ever</td>
+                    <td bgcolor="green" data-titulo="Triturado">Terminado</td>
+                    <td data-titulo="Fecha Triturado">15/03/2020</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">16/03/2020</td>
+                    <td data-titulo="Peso">0.00</td>
+                </tr>  
             </tbody>
         </table>
 
