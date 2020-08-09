@@ -1,5 +1,6 @@
 body{
-   background: url(../img/background.jpg) no-repeat center center fixed;
+   /*background: url(../img/background.jpg) no-repeat center center fixed;*/
+   background-color: #ffffff;
    background-size: cover;
 }
 
@@ -8,10 +9,15 @@ body{
 	padding:0; 
 }
 
+.logo-img img{
+  width: 17%;
+  margin-left:41%;
+}
+
 .agregar{
 	width:10%;
 	height:10%;
-	background:#024959;
+	background:#000000;
 	float: right;
 	margin-right: 8%;
 	display: block;
@@ -28,7 +34,7 @@ body{
 
 .submenu{
 	position: absolute;
-	background: #333333;
+	background: #000000;
 	width:15%;
 	display: none;
 	width:100%;
@@ -39,12 +45,12 @@ body{
 	padding: 10px;
 	color: #fff;
 	text-decoration: none;
-	border-bottom:1px solid rgba(255,255,255, .3);
+	border-bottom:1px solid #d7ba53;
 	font-size: 1.5vw;
 }
 
 section ul li a:hover {
-	background:#037E8C;
+	background:#d7ba53;
 }
 
 .agregar li:hover .submenu{
@@ -64,12 +70,16 @@ section ul li a:hover {
 
 .titulo-pag{
 	text-align: center;
-	color: white;
+	color: black;
 	margin-bottom:30px;
 	display: block;
 	float: left;
 	margin-left: 32%;
 	width: 35%;
+}
+
+.borde{
+	border: 3px solid #d7ba53;
 }
 
 .tam{
@@ -87,13 +97,13 @@ section ul li a:hover {
 }
 
 .fecha h3{
-	color: white;
+	color: black;
 	font-size: 1.5vw;
 	margin:30px 0;	
 }
 
 .filtros h3{
-	color: white;
+	color: black;
 	font-size: 1.5vw;
 	margin:30px 10px;
 	float: left;	
@@ -111,7 +121,7 @@ section ul li a:hover {
     margin-bottom:5%;
     width: 100px;
     height: 35px;
-    background:#024959;
+    background:#000000;
 }
 
 .btn-tabla{
@@ -120,22 +130,25 @@ section ul li a:hover {
     margin-left: 10%;
     width: 150px;
     height: 35px;
-    background:#024959;
+    background:#000000;
 }
 
 .margen-btn-tabla{
-	margin:0 15%;
+	margin:2% 15%;
+	margin-bottom: -5%;
 }
 
 header{
 	width:100%;
+	background-color: #000000;
+    padding-top:1px;
 }
 
 header nav{
 	width:100%;
 	max-width:1250px;
 	margin:20px auto;
-	background:#024959;
+	background:#000000;
 }
 
 .menu-bar{
@@ -149,7 +162,7 @@ header nav{
 }
 
 .forgot h2{
-    color: white;
+    color: black;
      font-size:3vw;
     /*font-family: 'Press Start 2P', cursive;
     font-family: 'Monoton', cursive;*/
@@ -169,7 +182,6 @@ header nav ul li a {
 	color:#fff;
 	padding:20px;
 	display:block;
-	text-decoration:none;
 }
 
 header nav ul li span {
@@ -177,7 +189,8 @@ header nav ul li span {
 }
 
 header nav ul li a:hover {
-	background:#037E8C;
+	background:#d7ba53;
+	text-decoration:none;
 }
 
 section {
@@ -186,15 +199,23 @@ section {
 
 table{
 	border-collapse: collapse;
-	background-color: #3b4652;
+	background-color: #ffffff;
     margin:0 auto;
     width: 85%;
+    box-shadow: 0px 0px 45px #d7ba53;
 }
 
 td, th{
 	padding: 5px 10px;
-	color: white;
-	border: 1px solid white;
+	color: black;
+	border: 2.5px solid #d7ba53;
+	box-shadow: 0px 0px 15px #d7ba53;
+}
+
+
+.logo{
+  width: 25%;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width:800px ){
@@ -265,7 +286,7 @@ td, th{
 	}
 
 	.filtros h4{
-	color: white;
+	color: black;
 	font-size: 2.7vw;
 	margin:20px auto;
 	}
@@ -292,7 +313,7 @@ td, th{
 	 table tr{
 	 	display: flex;
 	 	flex-direction: column;
-	 	border: 1px solid white;
+	 	border: 1px solid black;
 	 	padding: 1em;
 	 	margin-bottom: 1em;
 	 	background-color: #3b4652;
@@ -307,7 +328,7 @@ td, th{
 	 table td[data-titulo]::before{
 	 	content: attr( data-titulo );
 	 	width: 120px;
-	 	color: white;
+	 	color: black;
 	 	font-weight: bold;
 	 }
 

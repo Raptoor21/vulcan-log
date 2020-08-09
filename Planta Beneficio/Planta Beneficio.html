@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+    <meta charset="UTF-8">
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- iconos moon -->
+    <link rel="stylesheet" href="../iconos/fonts/style.css">
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/Planta Beneficio.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+ <header>
+    <div class="logo-img">
+        <a href="../menu/menu.html">
+            <img src="img/logotipohead.png"/>
+        </a>
+    </div>
+
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Mineral Molido.html"><span class="icon-add_circle">  Mineral Molido</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>  
+                <li><a href="../compras/compras area.html"><span class="icon-cart">  Compras</a></li>
+            </ul>
+        </nav>
+</header>  
+
+<body>
+    <section>
+        <div>
+            <ul class="agregar quit-p">
+            <li><a href="MODIFICAR/MdPlantaBeneficio.html"><span class="icon-add_circle">  Modificar</a></li>
+            </ul>
+        </div>
+        <div class="titulo">
+            <h1>Planta Beneficio</h1>
+        </div>
+    </section>
+
+    <section>
+         <div class="buscar">
+            <h3 class="buscarinput">Buscar</h3>
+            <input class="borde" type="text" name="buscar">
+        </div>
+    	<div class="fecha">
+    		<h3> Filtrar fecha de 
+    		<input class="borde" type="date" name="fecha" min="2020-01-1">
+            a <input class="borde" type="date" name="fecha" min="2018-03-25">
+            </h3>
+    	</div>
+    	<div class="filtros">
+            <h3>Filtrar por:</h3>
+            <h3><input type="checkbox" name="Id"> Id </h3>
+            <h3><input type="checkbox" name="Mina"> Mina </h3>
+            <h3><input type="checkbox" name="Nombre"> Nombre</h3>
+            <h4 button type="submit" class="btn btn-dark btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fecha de Ingreso</th>
+                    <th>Mina</th>
+                    <th>Ticket</th>
+                    <th>Quien Recibio</th>
+                    <th>Molienda</th>
+                    <th>Fecha</th>
+                    <th>Celdas Denver</th>
+                    <th>Fecha</th>
+                    <th>Tanques Hibridos</th>
+                    <th>Fecha</th>
+                    <th>Pilas</th>
+                    <th>Fecha</th>
+                    <th>Peso TMS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-titulo="Id">5</td>
+                    <td data-titulo="Fecha Ingreso">26/03/2020</td>
+                    <td data-titulo="Mina">Jales</td>
+                    <td data-titulo="Ticket">544</td>
+                    <td data-titulo="Nombre">Mario</td>
+                    <td bgcolor="red" data-titulo="Molienda">Pendiente</td>
+                    <td data-titulo="Fecha Molienda">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Celdas">Pendiente</td>
+                    <td data-titulo="Fecha Celdas">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Hibridos">Pendiente</td>
+                    <td data-titulo="Fecha Hibridos">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Pilas">Pendiente</td>
+                    <td data-titulo="Fecha Pilas">00/00/0000</td>
+                    <td data-titulo="Peso">N/A</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">4</td>
+                    <td data-titulo="Fecha Ingreso">25/03/2020</td>
+                    <td data-titulo="Mina">Jales</td>
+                    <td data-titulo="Ticket">543</td>
+                    <td data-titulo="Nombre">ever</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">09/03/2020</td>
+                    <td bgcolor="yellow" data-titulo="Celdas">Procesando</td>
+                    <td data-titulo="Fecha Celdas">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Hibridos">Pendiente</td>
+                    <td data-titulo="Fecha Hibridos">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Pilas">Pendiente</td>
+                    <td data-titulo="Fecha Pilas">00/00/0000</td>
+                    <td data-titulo="Peso">N/A</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">3</td>
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3226</td>
+                    <td data-titulo="Nombre">Mario</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">07/03/2020</td>
+                    <td bgcolor="green" data-titulo="Celdas">Terminado</td>
+                    <td data-titulo="Fecha Celdas">08/03/2020</td>
+                    <td bgcolor="yellow" data-titulo="Hibridos">Procesando</td>
+                    <td data-titulo="Fecha Hibridos">00/00/0000</td>
+                    <td bgcolor="red" data-titulo="Pilas">Pendiente</td>
+                    <td data-titulo="Fecha Pilas">00/00/0000</td>
+                    <td data-titulo="Peso">N/A</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">2</td>
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3223</td>
+                    <td data-titulo="Nombre">ever</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">04/03/2020</td>
+                    <td bgcolor="green" data-titulo="Celdas">Terminado</td>
+                    <td data-titulo="Fecha Celdas">05/03/2020</td>
+                    <td bgcolor="green" data-titulo="Hibridos">Terminado</td>
+                    <td data-titulo="Fecha Hibridos">06/03/2020</td>
+                    <td bgcolor="green" data-titulo="Pilas">Terminado</td>
+                    <td data-titulo="Fecha Pilas">06/03/2020</td>
+                    <td data-titulo="Peso">34.25</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">1</td>
+                    <td data-titulo="Fecha Ingreso">14/03/2020</td>
+                    <td data-titulo="Mina">Mina 1</td>
+                    <td data-titulo="Ticket">3221</td>
+                    <td data-titulo="Nombre">ever</td>
+                    <td bgcolor="green" data-titulo="Molienda">Terminado</td>
+                    <td data-titulo="Fecha Molienda">01/03/2020</td>
+                    <td bgcolor="green" data-titulo="Celdas">Terminado</td>
+                    <td data-titulo="Fecha Celdas">02/03/2020</td>
+                    <td bgcolor="green" data-titulo="Hibridos">Terminado</td>
+                    <td data-titulo="Fecha Hibridos">03/03/2020</td>
+                    <td bgcolor="green" data-titulo="Pilas">Terminado</td>
+                    <td data-titulo="Fecha Pilas">03/03/2020</td>
+                    <td data-titulo="Peso">41.94</td>
+                </tr>  
+            </tbody>
+        </table>
+
+        <div class="margen-btn-tabla">
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        </div>
+    </section> 
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+<footer>
+	<div class="col-12 forgot">
+          <img class="logo" src="img/logotipo.png"/>
+    </div>
+</footer>
+
+</html>

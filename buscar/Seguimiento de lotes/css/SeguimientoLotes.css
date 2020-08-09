@@ -1,16 +1,48 @@
 body{
-   background: url(../img/background.jpg) no-repeat center center fixed;
+   /*background: url(../img/background.jpg) no-repeat center center fixed;*/
+   background-color: #ffffff;
    background-size: cover;
 }
 
 header{
-  background-color: #024959;
+  background-color: #000000;
   border: 1px solid #024959;
 }
 
-*{
-	margin:0;
-	padding:0; 
+header p{
+  color: white;
+  text-align: right;
+  font-size: 1.8vw;
+  margin-right:10px;
+  margin-top: 15px;
+}
+
+.logo-img img{
+  width: 10%;
+  margin-left: 30%;
+  float: left;
+}
+
+.logo{
+  width: 20%;
+  margin-bottom: 5%;
+  margin-top: -5%;
+}
+
+.regresar{
+  font-size: 1.7vw;
+  margin-left: 1%;
+  margin-top: 1%;
+  color:white;
+  float: left;
+}
+
+.borde{
+	border: 3px solid #d7ba53;
+}
+
+header a:hover {
+  color:#d7ba53;
 }
 
 .margen-bus{
@@ -19,10 +51,9 @@ header{
 }
 
 .buscar{
-	color: white;
+	color: black;
 	display: block;
 	float: left;
-	margin-left: 8%;
 }
 
 .buscar h3{
@@ -93,11 +124,9 @@ section ul li a:hover {
 }
 
 .titulo{
-    color: white;
+    color: black;
     margin-bottom: 10px;
     text-align: center;
-}
-
 }
 
 .tam{
@@ -115,20 +144,20 @@ section ul li a:hover {
 }
 
 .fecha h3{
-	color: white;
+	color: black;
 	font-size: 1.5vw;
 	margin:30px 0;	
 }
 
 .filtros h3{
-	color: white;
+	color: black;
 	font-size: 1.5vw;
 	margin:30px 10px;
 	float: left;	
 }
 
 .filtros h4{
-	color: white;
+	color: black;
 	font-size: 1.2vw;
 	margin:30px 10px;
 }
@@ -148,7 +177,7 @@ section ul li a:hover {
     margin-left: 10%;
     width: 150px;
     height: 35px;
-    background:#024959;
+    background:#000000;
 }
 
 .margen-btn-tabla{
@@ -177,7 +206,7 @@ header nav{
 }
 
 .forgot h2{
-    color: white;
+    color: black;
      font-size:3vw;
     /*font-family: 'Press Start 2P', cursive;
     font-family: 'Monoton', cursive;*/
@@ -214,15 +243,17 @@ section {
 
 table{
 	border-collapse: collapse;
-	background-color: #3b4652;
+	background-color: #ffffff;
     margin:0 auto;
     width: 85%;
+    box-shadow: 0px 0px 45px #d7ba53;
 }
 
 td, th{
 	padding: 5px 10px;
-	color: white;
-	border: 1px solid white;
+	color: black;
+	border: 1px solid #d7ba53;
+	box-shadow: 0px 0px 9px #d7ba53;
 }
 
 @media screen and (max-width:800px ){
@@ -293,7 +324,7 @@ td, th{
 	}
 
 	.filtros h4{
-	color: white;
+	color: black;
 	font-size: 2.7vw;
 	margin:20px auto;
 	}
@@ -320,7 +351,7 @@ td, th{
 	 table tr{
 	 	display: flex;
 	 	flex-direction: column;
-	 	border: 1px solid white;
+	 	border: 1px solid black;
 	 	padding: 1em;
 	 	margin-bottom: 1em;
 	 	background-color: #3b4652;
@@ -335,7 +366,7 @@ td, th{
 	 table td[data-titulo]::before{
 	 	content: attr( data-titulo );
 	 	width: 120px;
-	 	color: white;
+	 	color: black;
 	 	font-weight: bold;
 	 }
 

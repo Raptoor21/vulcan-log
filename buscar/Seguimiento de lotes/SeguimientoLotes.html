@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
-    <!-- iconos moon -->
+     <!-- iconos moon -->
     <link rel="stylesheet" href="../../iconos/fonts/style.css">
 
     <!-- tipo de letra -->
@@ -32,19 +32,23 @@
 </head>
 
 <header>
+     <a class="regresar" href="../buscar/buscar.html"> <span class="icon-arrow-left"> Regresar </a>
 
-    <div class="titulo">
-        <h1>Seguimiento de Lotes</h1>
+    <div class="logo-img">
+        <a href="../../menu/menu.html">
+            <img src="img/logotipohead.png"/>
+        </a>
     </div>
 
+    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
 </header>
 
 <body>
 
     <section class="margen-bus">
         <div class="buscar">
-            <h3 class="buscarinput">Buscar por id</h3>
-            <input class="taminput" type="text" name="buscar">
+            <h3 class="buscarinput">Buscar Por Lote</h3>
+            <input class="taminput borde" type="text" name="buscar">
         </div>
     </section>
 
@@ -53,6 +57,7 @@
             <thead>
                 <tr>
                     <th>Id</th>
+                    <th>Lote</th>
                     <th>Vigilancia Estado</th>
                     <th>Fecha Entrada</th>
                     <th>Fecha Salida</th>
@@ -70,6 +75,7 @@
             <tbody>
                 <tr>
                     <td data-titulo="Id">100</td>
+                    <td data-titulo="Lote">Vulcan100</td>
                     <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
                     <td data-titulo="Fecha Entrada">16/03/2020</td>
                     <td data-titulo="Fecha Salida">16/03/2020</td>
@@ -86,6 +92,7 @@
 
                 <tr>
                     <td data-titulo="Id">101</td>
+                    <td data-titulo="Lote">Vulcan101</td>
                     <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
                     <td data-titulo="Fecha Entrada">16/03/2020</td>
                     <td data-titulo="Fecha Salida">16/03/2020</td>
@@ -102,6 +109,7 @@
 
                 <tr>
                     <td data-titulo="Id">102</td>
+                    <td data-titulo="Lote">Vulcan102</td>
                     <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
                     <td data-titulo="Fecha Entrada">16/03/2020</td>
                     <td data-titulo="Fecha Salida">16/03/2020</td>
@@ -118,13 +126,14 @@
 
                 <tr>
                     <td data-titulo="Id">103</td>
+                    <td data-titulo="Lote">Vulcan103</td>
                     <td bgcolor="green" data-titulo="Vigilancia Estado">Entregado</td>
                     <td data-titulo="Fecha Entrada">16/03/2020</td>
                     <td data-titulo="Fecha Salida">16/03/2020</td>
                     <td bgcolor="green" data-titulo="Trituracion Estado">Entregado</td>
                     <td data-titulo="Fecha Entrada">16/03/2020</td>
                     <td data-titulo="Fecha Salida">18/03/2020</td>
-                    <td bgcolor="yellow" data-titulo="Planta Estado">Recivido</td>
+                    <td bgcolor="orange" data-titulo="Planta Estado">Recibido</td>
                     <td data-titulo="Fecha Entrada">18/03/2020</td>
                     <td data-titulo="Fecha Salida">20/03/2020</td>
                     <td bgcolor="red" data-titulo="Patio Estado">Sin Recivir</td>
@@ -135,9 +144,9 @@
         </table>
 
         <div class="margen-btn-tabla">
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
         </div>
     </section> 
 
@@ -147,8 +156,8 @@
 </body>
 
 <footer>
-	<div class="col-12 forgot">
-        <h2> Vulcan logistics s.a. de c.v </h2>
+	 <div class="col-12 forgot">
+          <img class="logo" src="img/logotipo.png"/>
     </div>
 </footer>
 

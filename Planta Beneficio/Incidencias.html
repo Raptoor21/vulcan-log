@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VULCAN LOGISTICS S.A. DE C.V.</title>
+
+    <meta charset="UTF-8">
+	<!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- iconos moon -->
+    <link rel="stylesheet" href="../iconos/fonts/style.css">
+
+    <!-- tipo de letra -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+
+     <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="css/Incidencias.css">
+
+    <!-- meta vp -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+</head>
+
+ <header>
+    <a class="regresar" href="Planta Beneficio.html"> <span class="icon-arrow-left"> Regresar </a>
+
+    <div class="logo-img">
+        <a href="../menu/menu.html">
+            <img src="img/logotipohead.png"/>
+        </a>
+    </div>
+
+    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+</header>  
+
+<body>
+
+    <section>
+        <div>
+            <ul class="agregar quit-p">
+                <li><a href="AGREGAR/AgIncidencias.html"><span class="icon-add_circle">  Agregar</a></li>
+            </ul>
+        </div>
+        <div class="titulo">
+        <h1>Incidencias</h1>
+    </div>
+    </section>
+
+    <section>
+        <div class="buscar">
+            <h3 class="buscarinput">Buscar</h3>
+            <input class="borde" type="text" name="buscar">
+        </div>
+        <div class="fecha">
+            <h3> Filtrar fecha de 
+            <input class="borde" type="date" name="fecha" min="2020-01-1">
+            a <input class="borde" type="date" name="fecha" min="2018-03-25">
+            </h3>
+        </div>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Fecha</th>
+                    <th>Incidencia</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-titulo="Id">1</td>
+                    <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Incidencia">TRABAJANDO SOLO UN MOLINO</td>
+                    <td data-titulo="Descripcion">MOLINO 1   FUERA DE OPERACIÓN POR DAÑO EN TAMBOR ALIMENTADOR EN MANTTO INTERNO</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">2</td>
+                    <td data-titulo="Fecha">18/03/2020</td>
+                    <td data-titulo="Incidencia">VACIADO DE PILAS CONCENTRADO</td>
+                    <td data-titulo="Descripcion">FUERA OPERACIÓN POR SACAR CONCENTRADOS</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">3</td>
+                    <td data-titulo="Fecha">19/03/2020</td>
+                    <td data-titulo="Incidencia">FALLA RETROEXCAVADORA</td>
+                    <td data-titulo="Descripcion">PARA PLANTA 2DO T POR FALLA EN RETROEXCAVADORA PARA ALIMENTAR MINERAL </td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">4</td>
+                    <td data-titulo="Fecha">22/03/2020</td>
+                    <td data-titulo="Incidencia">FALTA MINERAL EN TRITURACIÓN</td>
+                    <td data-titulo="Descripcion">TRITURACION FUERA OPERACIÓN POR FALTA DE MINERAL </td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">5</td>
+                    <td data-titulo="Fecha">24/03/2020</td>
+                    <td data-titulo="Incidencia">SIN ENERGIA ELECTRICA</td>
+                    <td data-titulo="Descripcion">PLANTA FUERA DE OPERACIÓN POR DAÑO MOTOR COMPRESOR ; SIN ENERGIA ELECTRICA </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="margen-btn-tabla">
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        </div>
+    </section> 
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+
+<footer>
+	<div class="col-12 forgot">
+          <img class="logo" src="img/logotipo.png"/>
+    </div>
+</footer>
+
+</html>

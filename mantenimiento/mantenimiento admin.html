@@ -32,65 +32,56 @@
 </head>
 
  <header>
-    <div class="titulo">
-        <h1>Mantenimiento Admin</h1>
+
+    <div class="logo-img">
+        <a href="../menu/menu.html">
+            <img src="img/logotipohead.png"/>
+        </a>
     </div>
 
-    <!--<div class="menu-bar">
-        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
-    </div>
-        <nav>
-             <ul>
-                <li><a href="../inicio/vigilancia.html"><span class="icon-truck">  Vigilancia</a></li>
-                <li><a href="../registro de Mineral/registro de Mineral.html"><span class="icon-diamond">  Patio de Concentrado</a></li>
-                <li><a href="../tickets de combustibles/tickets de combustibles.html"><span class="icon-local_gas_station">  Trituracion</a></li>  
-                <li><a href="../requisiciones de material/requisiciones de material.html"><span class="icon-file-text">  Laboratorio</a></li>
-                <li><a href="../entrega de materiales/entrega de materiales.html"><span class="icon-enter">  Planta beneficio</a></li>
-                <li><a href="compras.html"><span class="icon-cart">  Almacen</a></li>
-                <li><a href="compras.html"><span class="icon-cart">  Mantenimiento</a></li>
-            </ul>
-        </nav>-->
+    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
 </header>  
 
 <body>
 
-    <section class="margen-bus">
-        <div class="buscar">
-            <h3 class="buscarinput">Buscar</h3>
-            <input type="text" name="buscar">
-        </div>
-        <div>
+    <section>
+       <div>
             <ul class="compras quit-p">
-                <li><a href="../compras/compras.html"><span class="icon-add_circle">  Compras</a></li>
+                <li><a href="../compras/compras area.html"><span class="icon-add_circle">  Compras</a></li>
             </ul>
             <ul class="agregar quit-p">
                 <li><a href="AGREGAR/mantenimiento admin/AgMantenimientoAdmin.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
+        <div class="titulo">
+        <h1>Mantenimiento Area</h1>
+    </div>
     </section>
 
-    	<p>.</p>
-
     <section>
+        <div class="buscar">
+            <h3 class="buscarinput">Buscar</h3>
+            <input class="borde" type="text" name="buscar">
+        </div>
     	<div class="fecha">
     		<h3> Filtrar fecha de 
-    		<input type="date" name="fecha" min="2020-01-1">
-            a <input type="date" name="fecha" min="2018-03-25">
+    		<input class="borde" type="date" name="fecha" min="2020-01-1">
+            a <input class="borde" type="date" name="fecha" min="2018-03-25">
             </h3>
     	</div>
-    	<div class="filtros">
-    		<h3>Filtrar por:</h3>
-    		<h3><input type="checkbox" name="Id"> Id </h3>
-    		<h3><input type="checkbox" name="Area"> Area </h3>
+        <div class="filtros">
+            <h3>Filtrar por:</h3>
+            <h3><input type="checkbox" name="Id"> Id </h3>
+            <h3><input type="checkbox" name="Area"> Area </h3>
             <h3><input type="checkbox" name="Solicitante"> Solicitante </h3>
             <h3><input type="checkbox" name="Reparador"> Reparador </h3>
-    		<h3><input type="checkbox" name="Estado"> Pendiente </h3>
+            <h3><input type="checkbox" name="Estado"> Pendiente </h3>
             <h3><input type="checkbox" name="Estado"> Listo </h3>
-    		<h4 button type="submit" class="btn btn-primary btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
-    	</div>
+            <h4 button type="submit" class="btn btn-dark btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
+        </div>
     </section>
 
-    <section>
+     <section>
         <table>
             <thead>
                 <tr>
@@ -159,9 +150,9 @@
         </table>
 
         <div class="margen-btn-tabla">
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
         </div>
     </section> 
 
@@ -172,7 +163,7 @@
 
 <footer>
 	<div class="col-12 forgot">
-        <h2> Vulcan logistics s.a. de c.v </h2>
+          <img class="logo" src="img/logotipo.png"/>
     </div>
 </footer>
 

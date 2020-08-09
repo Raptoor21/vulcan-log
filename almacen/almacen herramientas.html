@@ -32,6 +32,12 @@
 </head>
 
  <header>
+    <div class="logo-img">
+        <a href="../menu/menu.html">
+            <img src="img/logotipohead.png"/>
+        </a>
+    </div>
+
     <div class="menu-bar">
         <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
     </div>
@@ -40,23 +46,14 @@
                 <li><a href="almacen herramientas.html"><span class="icon-wrench">  Herramientas</a></li>
                 <li><a href="almacen materiales.html"><span class="icon-diamond">  Materiales</a></li>
                 <li><a href="almacen inventario.html"><span class="icon-clipboard">  Inventario</a></li>  
-                <li><a href="../compras/compras.html"><span class="icon-cart">  Compras</a></li>
+                <li><a href="../compras/compras area.html"><span class="icon-cart">  Compras</a></li>
             </ul>
         </nav>
-
-    <div class="titulo">
-        <h1>Herramientas</h1>
-    </div>
 </header>  
 
 <body>
-
-    <section class="margen-bus">
-        <div class="buscar">
-            <h3 class="buscarinput">Buscar</h3>
-            <input type="text" name="buscar">
-        </div>
-        <div>
+    <section>
+       <div>
             <ul class="agregar quit-p">
                 <li><a href="hospital.html"><span class="icon-add_circle">  Agregar</a>
                     <ul class="quit-p submenu">
@@ -66,25 +63,30 @@
                 </li>
             </ul>
         </div>
+        <div class="titulo">
+            <h1>Herramientas</h1>
+        </div>
     </section>
 
-    	<p>.</p>
-
     <section>
+         <div class="buscar">
+            <h3 class="buscarinput">Buscar</h3>
+            <input class="borde" type="text" name="buscar">
+        </div>
     	<div class="fecha">
     		<h3> Filtrar fecha de 
-    		<input type="date" name="fecha" min="2020-01-1">
-            a <input type="date" name="fecha" min="2018-03-25">
+    		<input class="borde" type="date" name="fecha" min="2020-01-1">
+            a <input class="borde" type="date" name="fecha" min="2018-03-25">
             </h3>
     	</div>
     	<div class="filtros">
-    		<h3>Filtrar por:</h3>
-    		<h3><input type="checkbox" name="Id"> Id </h3>
-    		<h3><input type="checkbox" name="Herramienta"> Herramienta </h3>
-    		<h3><input type="checkbox" name="Estado"> Prestada </h3>
+            <h3>Filtrar por:</h3>
+            <h3><input type="checkbox" name="Id"> Id </h3>
+            <h3><input type="checkbox" name="Herramienta"> Herramienta </h3>
+            <h3><input type="checkbox" name="Estado"> Prestada </h3>
             <h3><input type="checkbox" name="Estado"> Disponible </h3>
-    		<h4 button type="submit" class="btn btn-primary btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
-    	</div>
+            <h4 button type="submit" class="btn btn-dark btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
+        </div>
     </section>
 
     <section>
@@ -152,9 +154,9 @@
         </table>
 
         <div class="margen-btn-tabla">
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
-        	<h4 button type="submit" class="btn btn-primary btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Enviar a exel</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Informe</h4>
+        	<h4 button type="submit" class="btn btn-dark btn-tabla"> <i class="fas fa-sign-in-alt icon-ing"> </i> Imprimir</h4>
         </div>
     </section> 
 
@@ -165,7 +167,7 @@
 
 <footer>
 	<div class="col-12 forgot">
-        <h2> Vulcan logistics s.a. de c.v </h2>
+          <img class="logo" src="img/logotipo.png"/>
     </div>
 </footer>
 

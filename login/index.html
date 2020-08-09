@@ -23,60 +23,30 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
   <body>
-
+    <div class="col-12 forgot">
+          <img class="logo" src="img/logotipo.png"/>
+    </div>
+    <div class="col-12 forgot">
+        <h1 class="Bienvenido">Bienvenido a vulcan, Amigo</h1>
+    </div>
     <main class="container">
       <div class="modal-content">
         <form action="../menu/menu.html" method="get">
-           <div class="col-12 user-img">
-              <img src="img/user.png"/>
-          </div>
-		  <h2 class="text-center">Log in</h2>
 		  <div class="form-group">
-            <label for="title">Ingresa el Nombre del Usuario</label>
-			  <div class="form-group" id="user-group">
+			  <div class="form-group borde" id="user-group">
         <input 
-				placeholder="ingresa nombre aqui.."	
+				placeholder="Correo Electronico"	
 				class="form-control"
 				name="user-name"
 				required="required"
             />
         </div>
-          </div>
-          <div id="user-type-select" class="form-group">
-            <label for="title">Selecciona el tipo de usuario</label>
-            <select
-              class="form-control"
-              name="user-type"
-			  required="required"
-			  onchange="setValue()"
-            >
-              <option value="" selected>por favor elige uno</option>
-
-              <option value="ROOT">ROOT</option>
-              <option value="ADMIN">ADMIN</option>
-              <option value="NORMAL">NORMAL</option>
-            </select>
-          </div>
-          <div id="department-select" class="form-group">
-            <label for="title">Selecciona tu departamento</label>
-            <select
-              class="form-control"
-              id="title"
-			  name="user-department"
-			  required="required"
-            >
-              <option value="" selected>por favor elige uno</option>
-
-              <option value="security">Vigilancia</option>
-              <option value="maintainment">Mantenimiento</option>
-            </select>
-          </div>
+      </div>
           <div class="form-group">
-            <label for="title">Ingresa tu contraseña</label>
-            <div class="form-group" id="contrasena-group">
+            <div class="form-group borde" id="contrasena-group">
             <input
             type="password"
-            placeholder="ingresa contraseña aqui.." 
+            placeholder="contraseña" 
             class="form-control"
             name="password"
             required="required"
@@ -84,14 +54,14 @@
           </div>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-block">
+            <button type="submit" class="btn btn-dark btn-block">
               Ingresar
             </button>
           </div>
         </form>
-        <div class="col-12 forgot">
-            <a href="#"> Vulcan logistics s.a. de c.v. </a>
-        </div>
+      </div>
+      <div>
+        <p class="text-center">Olvidaste tu contraseña? Click aqui</p>
       </div>
     </main>
 
