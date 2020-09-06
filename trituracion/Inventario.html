@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
 
      <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/Mineral Recibido.css">
+    <link rel="stylesheet" type="text/css" href="css/Incidencias.css">
 
     <!-- meta vp -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -47,9 +47,9 @@
     </div>
         <nav>
              <ul>
-                <li><a href="Mineral Triturado.html"><span class="icon-add_circle"> Trituracion</a></li>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Mineral Triturado.html"><span class="icon-add_circle">  Trituracion</a></li>
                 <li><a href="Trituracion.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
-                <li><a href="Inventario.html"><span class="icon-add_circle">  Inventario</a></li>
                 <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
                 <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>
 
@@ -62,11 +62,11 @@
     <section>
         <div>
             <ul class="agregar quit-p">
-                <li><a href="AGREGAR/AgMineralRecibido.html"><span class="icon-add_circle">  Modificar</a></li>
+                <li><a href="AGREGAR/AgIncidencias.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
         <div class="titulo-pag">
-        <h1>Mineral Recibido</h1>
+        <h1>Inventario</h1>
     </div>
     </section>
 
@@ -75,12 +75,12 @@
             <h3 class="buscarinput">Buscar</h3>
             <input class="borde" type="text" name="buscar">
         </div>
-    	<div class="fecha">
-    		<h3> Filtrar fecha de 
-    		<input class="borde" type="date" name="fecha" min="2020-01-1">
+        <div class="fecha">
+            <h3> Filtrar fecha de 
+            <input class="borde" type="date" name="fecha" min="2020-01-1">
             a <input class="borde" type="date" name="fecha" min="2018-03-25">
             </h3>
-    	</div>
+        </div>
     </section>
 
     <section>
@@ -88,55 +88,53 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Fecha de Ingreso</th>
+                    <th>Fecha</th>
                     <th>Procedencia</th>
-                    <th>Ticket</th>
-                    <th>Estatus</th>
-                    <th>TMH</th>
-                    <th>% HUM</th>
-                    <th>TMS</th>
+                    <th>TMS recibidas</th>
+                    <th>TMS Trituradas</th>
+                    <th>TMS Entregadas</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Fecha">01/03/2020</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3221</td>
-                    <td data-titulo="Estatus">------</td>
-                    <td data-titulo="TMH"></td>
-                    <td data-titulo="HUM"></td>
-                    <td data-titulo="TMS"></td>
+                    <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="recibidas">20.20</td>
+                    <td data-titulo="Trituradas">10.55</td>
+                    <td data-titulo="Entregadas">70.35</td>
                 </tr>
-               <tr>
+                <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Fecha">01/03/2020</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3223</td>
-                    <td data-titulo="Estatus">Recibido</td>
-                    <td data-titulo="TMH">22.86</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">22.17</td>
+                    <td data-titulo="Fecha">17/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="recibidas">23.40</td>
+                    <td data-titulo="Trituradas">00.00</td>
+                    <td data-titulo="Entregadas">00.00</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
-                    <td data-titulo="Fecha">02/03/2020</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3226</td>
-                    <td data-titulo="Estatus">Triturado</td>
-                    <td data-titulo="TMH">19.17</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">18.59</td>
+                    <td data-titulo="Fecha">19/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="recibidas">00.00</td>
+                    <td data-titulo="Trituradas">00.00</td>
+                    <td data-titulo="Entregadas">55.56</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
-                    <td data-titulo="Fecha">03/03/2020</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3230</td>
-                    <td data-titulo="Estatus">Triturado</td>
-                    <td data-titulo="TMH">21.12</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">20.49</td>
+                    <td data-titulo="Fecha">22/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="recibidas">22.24</td>
+                    <td data-titulo="Trituradas">25.55</td>
+                    <td data-titulo="Entregadas">70.35</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">5</td>
+                    <td data-titulo="Fecha">24/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="recibidas">20.20</td>
+                    <td data-titulo="Trituradas">10.55</td>
+                    <td data-titulo="Entregadas">70.35</td>
                 </tr>
             </tbody>
         </table>

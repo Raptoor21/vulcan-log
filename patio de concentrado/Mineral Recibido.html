@@ -31,16 +31,27 @@
 
 </head>
 
- <header>
-    <a class="regresar" href="PatioConcentrado.html"> <span class="icon-arrow-left"> Regresar </a>
-
+<header>
     <div class="logo-img">
         <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
+        <div class="titulo-pag1">
+            <h1 class="tam">Patio Concentrado</h1>
+        </div>
+        <span class="icon-bell notificacion">
     </div>
-
-    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Embarques.html"><span class="icon-add_circle">  Embarques</a></li>
+                <li><a href="PatioConcentrado.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>  
+            </ul>
+        </nav>
 </header>  
 
 <body>
@@ -51,7 +62,7 @@
                 <li><a href="AGREGAR/AgMineralRecibido.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
-        <div class="titulo">
+        <div class="titulo-pag">
         <h1>Mineral Recibido</h1>
     </div>
     </section>
@@ -75,11 +86,60 @@
                 <tr>
                     <th>Id</th>
                     <th>Fecha</th>
-                    <th>Mina</th>
-                    <th>Ticket</th>
-                    <th>TMH</th>
-                    <th>HUM</th>
-                    <th>TMS</th>
+                    <th>Procedencia</th>
+                    <th>Lote</th>
+                    <th>TMH Procesadas</th>
+                    <th>Estatus</th>
+                    <th>Concentrado Pb</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
+                    <th>Concentrado TMH</th>
+                    <th>Concentrado % HUM</th>
+                    <th>Concentrado TMS</th>
+                    <th>Relacion de Concentracion</th>
+                    <th>No.Embarque</th>
+
+                    <th>Concentrado Zn</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
+                    <th>Concentrado TMH</th>
+                    <th>Concentrado % HUM</th>
+                    <th>Concentrado TMS</th>
+                    <th>Relacion de Concentracion</th>
+                    <th>No.Embarque</th>
+
+                     <th>Concentrado Bulk</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
+                    <th>Concentrado TMH</th>
+                    <th>Concentrado % HUM</th>
+                    <th>Concentrado TMS</th>
+                    <th>Relacion de Concentracion</th>
+                    <th>No.Embarque</th>
+
+                     <th>Cabeza</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
+                   
+                     <th>Cola Pb</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
+
+                     <th>Cola final</th>
+                    <th>AU</th>
+                    <th>AG</th>
+                    <th>% PB</th>
+                    <th>% ZN</th>
                 </tr>
             </thead>
             <tbody>
@@ -87,37 +147,33 @@
                     <td data-titulo="Id">1</td>
                     <td data-titulo="Fecha">01/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3221</td>
+                    <td data-titulo="Lote">vulcan 01</td>
                     <td data-titulo="TMH">22.9</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">22.21</td>
+                    <td data-titulo="Estatus">------</td>
                 </tr>
                <tr>
                     <td data-titulo="Id">2</td>
                     <td data-titulo="Fecha">01/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3223</td>
+                    <td data-titulo="Lote">vulcan 01</td>
                     <td data-titulo="TMH">22.86</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">22.17</td>
+                    <td data-titulo="Estatus">Recibido</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
                     <td data-titulo="Fecha">02/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3226</td>
+                    <td data-titulo="Lote">vulcan 01</td>
                     <td data-titulo="TMH">19.17</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">18.59</td>
+                    <td data-titulo="Estatus">Recibido</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
                     <td data-titulo="Fecha">03/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3230</td>
+                    <td data-titulo="Lote">vulcan 01</td>
                     <td data-titulo="TMH">21.12</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">20.49</td>
+                    <td data-titulo="Estatus">Recibido</td>
                 </tr>
             </tbody>
         </table>

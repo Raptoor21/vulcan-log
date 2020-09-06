@@ -4,56 +4,45 @@ body{
    background-size: cover;
 }
 
-header{
-  background-color: #000000;
-  border: 1px solid #024959;
-}
-
-header p{
-  color: white;
-  text-align: right;
-  font-size: 1.8vw;
-  margin-right:10px;
-  margin-top: 15px;
+*{
+	margin:0;
+	padding:0; 
 }
 
 .logo-img img{
   width: 10%;
-  margin-left: 30%;
-  float: left;
+  margin-left:6%;
 }
 
-.logo{
-  width: 20%;
-  margin-bottom: 5%;
-  margin-top: -5%;
-  margin-left: -7%;
+.notificacion{
+	color:white;
+	font-size: 2vw;
+	margin-left: 90%;
+	float:left;
+	margin-top: -3%;
 }
 
-.regresar{
-  font-size: 1.7vw;
-  margin-left: 1%;
-  margin-top: 1%;
-  color:white;
-  float: left;
+.agregar{
+	width:10%;
+	height:10%;
+	background:#000000;
+	margin-right: 8%;
+	margin-top: 1%;
+	float: right;
+	display: block;
+	position: relative;
 }
 
-.borde{
-	border: 3px solid #d7ba53;
-}
+.agregar li a {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.8vw;
 
-header a:hover {
-  color:#d7ba53;
-}
-
-.margen-bus{
-	margin-top: 5%;
-	margin-left: 8%;
 }
 
 .buscar{
 	color: black;
-	display: block;
 	margin-left: 8%;
 	margin-bottom: 4%;
 }
@@ -67,32 +56,9 @@ header a:hover {
 	margin-right: 20px; 
 }
 
-.taminput{
-width: 250px;
-}
-
-.agregar{
-	width:14%;
-	height:7%;
-	background:#000000;
-	float: right;
-	margin-right: 7%;
-	margin-top: 3%;
-	display: block;
-	position: relative;
-}
-
-.agregar li a {
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
-	font-size: 1.8vw;
-
-}
-
 .submenu{
 	position: absolute;
-	background: #333333;
+	background: #000000;
 	width:15%;
 	display: none;
 	width:100%;
@@ -103,7 +69,7 @@ width: 250px;
 	padding: 10px;
 	color: #fff;
 	text-decoration: none;
-	border-bottom:1px solid rgba(255,255,255, .3);
+	border-bottom:1px solid #d7ba53;
 	font-size: 1.5vw;
 }
 
@@ -126,12 +92,25 @@ section ul li a:hover {
     padding: 0;
 }
 
-.titulo{
-    color: black;
-    margin-top: 2%;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-left: 13%;
+.titulo-pag{
+	text-align: center;
+	color: black;
+	margin-bottom:30px;
+	display: block;
+	margin-left: 32%;
+	width: 35%;
+}
+
+.titulo-pag1{
+	text-align: center;
+	color: white;
+	margin-top: -4%;
+	margin-left: 32%;
+	width: 35%;
+}
+
+.borde{
+	border: 3px solid #d7ba53;
 }
 
 .tam{
@@ -186,18 +165,21 @@ section ul li a:hover {
 }
 
 .margen-btn-tabla{
-	margin:0 15%;
+	margin:2% 15%;
+	margin-bottom: -5%;
 }
 
 header{
 	width:100%;
+	background-color: #000000;
+    padding-top:1px;
 }
 
 header nav{
 	width:100%;
 	max-width:1250px;
 	margin:20px auto;
-	background:#024959;
+	background:#000000;
 }
 
 .menu-bar{
@@ -231,15 +213,15 @@ header nav ul li a {
 	color:#fff;
 	padding:20px;
 	display:block;
-	text-decoration:none;
 }
 
 header nav ul li span {
-	margin-left:10px;
+	margin-left:70px;
 }
 
 header nav ul li a:hover {
-	background:#037E8C;
+	background:#d7ba53;
+	text-decoration:none;
 }
 
 section {
@@ -257,8 +239,14 @@ table{
 td, th{
 	padding: 5px 10px;
 	color: black;
-	border: 1px solid #d7ba53;
-	box-shadow: 0px 0px 9px #d7ba53;
+	border: 2.5px solid #d7ba53;
+	box-shadow: 0px 0px 15px #d7ba53;
+}
+
+
+.logo{
+  width: 25%;
+  margin-bottom: 5%;
 }
 
 @media screen and (max-width:800px ){

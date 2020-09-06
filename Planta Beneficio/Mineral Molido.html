@@ -32,15 +32,27 @@
 </head>
 
  <header>
-    <a class="regresar" href="Planta Beneficio.html"> <span class="icon-arrow-left"> Regresar </a>
-
     <div class="logo-img">
         <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
+        <div class="titulo-pag1">
+            <h1 class="tam">Molienda</h1>
+        </div>
+        <span class="icon-bell notificacion">
     </div>
-
-    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Planta Beneficio.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Inventario</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>  
+            </ul>
+        </nav>
 </header>  
 
 <body>
@@ -51,7 +63,7 @@
                 <li><a href="AGREGAR/AgMineralMolido.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
-        <div class="titulo">
+        <div class="titulo-pag">
         <h1>Mineral Molido</h1>
     </div>
     </section>
@@ -79,126 +91,104 @@
         <table>
             <thead>
                 <tr>
-                    <tr>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1">RECIVIDAS</td>
-                        <td colspan="1"></td>
-                        <td colspan="4">MOLINO 1</td>
-                        <td colspan="4">MOLINO 2</td>
-                        <td colspan="1">2 MOLINOS</td>
-                        <td colspan="1">INVENTARIO</td>
-                    </tr>
                     <th>Id</th>
-                    <th>Fecha</th>
-                    <th>Ticket</th>
-                    <th>Mina</th>
+                    <th>Fecha Ingreso</th>
+                    <th>Procedencia</th>
                     <th>TMS</th>
                     <th>Mina En Proceso</th>
+                    <th>Estatus</th>
+                    <th>Molino</th>
                     <th>TMH</th>
                     <th>TMS</th>
-                    <th>%HUM</th>
+                    <th>% HUM</th>
                     <th>Hr.Operacion</th>
-                    <th>TMH</th>
-                    <th>TMS</th>
-                    <th>%HUM</th>
-                    <th>Hr.Operacion</th>
-                    <th>Total TMS</th>
-                    <th>TMS</th>
+                    <th>Lote</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Ticket">3221</td>
+                    <td data-titulo="Fecha">02/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">00.00</td>
+                    <td data-titulo="TMS">45.00</td>
                     <td data-titulo="Proceso">1</td>
+                    <td data-titulo="Estatus">Recivido</td>
+                    <td data-titulo="Molino">Sin asignar</td>
                     <td data-titulo="TMH">0</td>
                     <td data-titulo="TMS">0</td>
                     <td data-titulo="%HUM">0</td>
                     <td data-titulo="Operacion">0</td>
-                    <td data-titulo="TMH">5.51</td>
-                    <td data-titulo="TMS">5.01</td>
-                    <td data-titulo="%HUM">9</td>
-                    <td data-titulo="Operacion">6.00</td>
-                    <td data-titulo="Total TMS">5.01</td>
-                    <td data-titulo="TMS">127.81</td>
+                    <td data-titulo="Lote">N/A</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Fecha">17/03/2020</td>
-                    <td data-titulo="Ticket">3223</td>
+                    <td data-titulo="Fecha">03/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">00.00</td>
+                    <td data-titulo="TMS">45.81</td>
                     <td data-titulo="Proceso">1</td>
-                    <td data-titulo="TMH">0</td>
-                    <td data-titulo="TMS">0</td>
-                    <td data-titulo="%HUM">0</td>
-                    <td data-titulo="Operacion">0</td>
-                    <td data-titulo="TMH">19.40</td>
-                    <td data-titulo="TMS">18.23</td>
-                    <td data-titulo="%HUM">6</td>
-                    <td data-titulo="Operacion">24.00</td>
-                    <td data-titulo="Total TMS">18.23</td>
-                    <td data-titulo="TMS">109.58</td>
+                    <td data-titulo="Estatus">tolva de finos</td>
+                    <td data-titulo="Molino">Molino 2</td>
+                    <td data-titulo="TMH">15.17</td>
+                    <td data-titulo="TMS">14.2</td>
+                    <td data-titulo="%HUM">5</td>
+                    <td data-titulo="Operacion">23.00</td>
+                    <td data-titulo="Lote">N/A</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
                     <td data-titulo="Fecha">18/03/2020</td>
-                    <td data-titulo="Ticket">3226</td>
                     <td data-titulo="Mina">Mina 1</td>
                     <td data-titulo="TMS">20.49</td>
                     <td data-titulo="Proceso">1</td>
-                    <td data-titulo="TMH">0</td>
-                    <td data-titulo="TMS">0</td>
-                    <td data-titulo="%HUM">0</td>
-                    <td data-titulo="Operacion">0</td>
-                    <td data-titulo="TMH">12.51</td>
-                    <td data-titulo="TMS">9.01</td>
-                    <td data-titulo="%HUM">5</td>
-                    <td data-titulo="Operacion">8.00</td>
-                    <td data-titulo="Total TMS">6.01</td>
-                    <td data-titulo="TMS">201.81</td>
+                    <td data-titulo="Estatus">Celdas</td>
+                    <td data-titulo="Molino">Molino 1</td>
+                    <td data-titulo="TMH">17.58</td>
+                    <td data-titulo="TMS">15.25</td>
+                    <td data-titulo="%HUM">4</td>
+                    <td data-titulo="Operacion">21.00</td>
+                    <td data-titulo="Lote">N/A</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
                     <td data-titulo="Fecha">19/03/2020</td>
-                    <td data-titulo="Ticket">3230</td>
                     <td data-titulo="Mina">Mina 1</td>
                     <td data-titulo="TMS">114.55</td>
                     <td data-titulo="Proceso">1</td>
+                    <td data-titulo="Estatus">Procesado</td>
+                    <td data-titulo="Molino">Molino 2</td>
                     <td data-titulo="TMH">33.07</td>
                     <td data-titulo="TMS">32.49</td>
                     <td data-titulo="%HUM">2</td>
                     <td data-titulo="Operacion">15.75</td>
-                    <td data-titulo="TMH">15.51</td>
-                    <td data-titulo="TMS">15.01</td>
-                    <td data-titulo="%HUM">2</td>
-                    <td data-titulo="Operacion">24.00</td>
-                    <td data-titulo="Total TMS">5.01</td>
-                    <td data-titulo="TMS">127.81</td>
+                    <td data-titulo="Lote">Lote 1</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">5</td>
                     <td data-titulo="Fecha">22/03/2020</td>
-                    <td data-titulo="Ticket">542</td>
                     <td data-titulo="Mina">jales</td>
                     <td data-titulo="TMS">62.74</td>
                     <td data-titulo="Proceso">jales</td>
+                    <td data-titulo="Estatus">Procesado</td>
+                    <td data-titulo="Molino">Molino 1</td>
                     <td data-titulo="TMH">14.58</td>
                     <td data-titulo="TMS">47.63</td>
                     <td data-titulo="%HUM">3</td>
                     <td data-titulo="Operacion">17.23</td>
-                    <td data-titulo="TMH">5.51</td>
-                    <td data-titulo="TMS">5.01</td>
+                    <td data-titulo="Lote">Lote 2</td>
+                </tr>
+                <tr>
+                    <td data-titulo="Id">6</td>
+                    <td data-titulo="Fecha">22/03/2020</td>
+                    <td data-titulo="Mina">jales</td>
+                    <td data-titulo="TMS">62.74</td>
+                    <td data-titulo="Proceso">jales</td>
+                    <td data-titulo="Estatus">Procesado</td>
+                    <td data-titulo="Molino">Molino 1</td>
+                    <td data-titulo="TMH">14.58</td>
+                    <td data-titulo="TMS">47.63</td>
                     <td data-titulo="%HUM">3</td>
-                    <td data-titulo="Operacion">6.00</td>
-                    <td data-titulo="Total TMS">5.01</td>
-                    <td data-titulo="TMS">127.81</td>
+                    <td data-titulo="Operacion">17.23</td>
+                    <td data-titulo="Lote">Lote 2</td>
                 </tr>
             </tbody>
         </table>

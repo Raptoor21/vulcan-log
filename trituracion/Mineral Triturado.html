@@ -32,15 +32,29 @@
 </head>
 
  <header>
-    <a class="regresar" href="Trituracion.html"> <span class="icon-arrow-left"> Regresar </a>
-
-    <div class="logo-img">
+     <div class="logo-img">
         <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
+         <div class="titulo-pag1">
+            <h1 class="tam">Trituracion</h1>
+        </div>
+        <span class="icon-bell notificacion">
     </div>
 
-    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Trituracion.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
+                <li><a href="Inventario.html"><span class="icon-add_circle">  Inventario</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>
+
+            </ul>
+        </nav>
 </header>  
 
 <body>
@@ -51,8 +65,8 @@
                 <li><a href="AGREGAR/AgMineralTriturado.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
-        <div class="titulo">
-        <h1>Mineral Triturado</h1>
+        <div class="titulo-pag">
+        <h1>Trituracion</h1>
     </div>
     </section>
 
@@ -75,88 +89,88 @@
     	</div>
     </section>
 
-    <section>
+<section>
         <table>
             <thead>
                 <tr>
-                    <tr>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1"></td>
-                        <td colspan="1">RECIVIDAS</td>
-                        <td colspan="1">TRITURADAS</td>
-                        <td colspan="1">ENTREGADAS</td>
-                        <td colspan="1">TOTAL ENTREGADAS POR DIA</td>
-                        <td colspan="1">SALDO</td>
-                    </tr>
                     <th>Id</th>
-                    <th>Fecha</th>
-                    <th>Ticket</th>
-                    <th>Mina</th>
-                    <th>TMS</th>
-                    <th>TMS</th>
-                    <th>TMS</th>
-                    <th>TMS</th>
-                    <th>TMS</th>
+                    <th>Fecha Entrega</th>
+                    <th>Procedencia</th>
+                    <th>THM</th>
+                    <th>% HUM</th>
+                    <th>TMS Entregadas</th>
+                    <th>Conductor</th>
+                    <th>Camion</th>
+                    <th>Placas</th>
+                    <th>Ticket Salida</th>
+                    <th>Estatus</th>
+                    <th>Img Referencia</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
                     <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Ticket">3221</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">44.39</td>
-                    <td data-titulo="TMS"></td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">153.93</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="THM">23.5</td>
+                    <td data-titulo="HUM">2</td>
+                    <td data-titulo="THS">23.5</td>
+                    <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion rojo</td>
+                    <td data-titulo="Placas">DGO12478HD</td>
+                    <td data-titulo="TicketS">514</td>
+                    <td data-titulo="Estatus">Entregado</td>
+                    <td data-titulo="Foto">
+                        <img src="img/info.png">
+                    </td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
                     <td data-titulo="Fecha">17/03/2020</td>
-                    <td data-titulo="Ticket">3223</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">18.59</td>
-                    <td data-titulo="TMS"></td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">172.52</td>
-                </tr>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="THM">20.5</td>
+                    <td data-titulo="HUM">2</td>
+                    <td data-titulo="THS">19.5</td>
+                    <td data-titulo="Conductor">Raul</td>
+                    <td data-titulo="Camion">camion azul</td>
+                    <td data-titulo="Placas">DGO17896HD</td>
+                    <td data-titulo="TicketS">513</td>
+                    <td data-titulo="Estatus">Entregado</td>
+                    <td data-titulo="Foto">
+                        <img src="img/info.png">
+                    </td>
+                </tr> 
                 <tr>
                     <td data-titulo="Id">3</td>
-                    <td data-titulo="Fecha">18/03/2020</td>
-                    <td data-titulo="Ticket">3226</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">20.49</td>
-                    <td data-titulo="TMS"></td>
-                    <td data-titulo="TMS">45.81</td>
-                    <td data-titulo="TMS">45.81</td>
-                    <td data-titulo="TMS">147.20</td>
+                    <td data-titulo="Fecha">17/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 2</td>
+                    <td data-titulo="THM">25.5</td>
+                    <td data-titulo="HUM">1</td>
+                    <td data-titulo="THS">22.5</td>
+                    <td data-titulo="Conductor">rene</td>
+                    <td data-titulo="Camion">camion blanco</td>
+                    <td data-titulo="Placas">DGO141254HD</td>
+                    <td data-titulo="TicketS">512</td>
+                    <td data-titulo="Estatus">Entregado</td>
+                    <td data-titulo="Foto">
+                        <img src="img/info.png">
+                    </td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
-                    <td data-titulo="Fecha">19/03/2020</td>
-                    <td data-titulo="Ticket">3230</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="TMS">00.00</td>
-                    <td data-titulo="TMS"></td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">147.20</td>
-                </tr>
-                <tr>
-                    <td data-titulo="Id">5</td>
-                    <td data-titulo="Fecha">22/03/2020</td>
-                    <td data-titulo="Ticket">542</td>
-                    <td data-titulo="Mina">jales</td>
-                    <td data-titulo="TMS">62.74</td>
-                    <td data-titulo="TMS"></td>
-                    <td data-titulo="TMS">62.74</td>
-                    <td data-titulo="TMS">0.00</td>
-                    <td data-titulo="TMS">0.00</td>
-                </tr>
+                    <td data-titulo="Fecha">18/03/2020</td>
+                    <td data-titulo="Procedencia">jales</td>
+                    <td data-titulo="THM">27.5</td>
+                    <td data-titulo="HUM">2</td>
+                    <td data-titulo="THS">25.5</td>
+                    <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion rojo</td>
+                    <td data-titulo="Placas">DGO15478HD</td>
+                    <td data-titulo="TicketS">511</td>
+                    <td data-titulo="Estatus">Entregado</td>
+                    <td data-titulo="Foto">
+                        <img src="img/info.png">
+                    </td>          
             </tbody>
         </table>
 

@@ -32,15 +32,29 @@
 </head>
 
  <header>
-    <a class="regresar" href="Trituracion.html"> <span class="icon-arrow-left"> Regresar </a>
-
     <div class="logo-img">
         <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
+         <div class="titulo-pag1">
+            <h1 class="tam">Trituracion</h1>
+        </div>
+        <span class="icon-bell notificacion">
     </div>
 
-    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Mineral Recibido.html"><span class="icon-add_circle">  Mineral Recibido</a></li>
+                <li><a href="Mineral Triturado.html"><span class="icon-add_circle">  Trituracion</a></li>
+                <li><a href="Trituracion.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
+                <li><a href="Inventario.html"><span class="icon-add_circle">  Inventario</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>
+
+            </ul>
+        </nav>
 </header>  
 
 <body>
@@ -51,7 +65,7 @@
                 <li><a href="AGREGAR/AgIncidencias.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
-        <div class="titulo">
+        <div class="titulo-pag">
         <h1>Incidencias</h1>
     </div>
     </section>
@@ -75,6 +89,7 @@
                 <tr>
                     <th>Id</th>
                     <th>Fecha</th>
+                    <th>Area</th>
                     <th>Incidencia</th>
                     <th>Descripcion</th>
                 </tr>
@@ -83,30 +98,35 @@
                 <tr>
                     <td data-titulo="Id">1</td>
                     <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Area">Trituracion</td>
                     <td data-titulo="Incidencia">TRABAJANDO SOLO UN MOLINO</td>
                     <td data-titulo="Descripcion">MOLINO 1   FUERA DE OPERACIÓN POR DAÑO EN TAMBOR ALIMENTADOR EN MANTTO INTERNO</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">2</td>
                     <td data-titulo="Fecha">18/03/2020</td>
+                    <td data-titulo="Area">Molienda</td>
                     <td data-titulo="Incidencia">VACIADO DE PILAS CONCENTRADO</td>
                     <td data-titulo="Descripcion">FUERA OPERACIÓN POR SACAR CONCENTRADOS</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
                     <td data-titulo="Fecha">19/03/2020</td>
+                    <td data-titulo="Area">Patio</td>
                     <td data-titulo="Incidencia">FALLA RETROEXCAVADORA</td>
                     <td data-titulo="Descripcion">PARA PLANTA 2DO T POR FALLA EN RETROEXCAVADORA PARA ALIMENTAR MINERAL </td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">4</td>
                     <td data-titulo="Fecha">22/03/2020</td>
+                    <td data-titulo="Area">Trituracion</td>
                     <td data-titulo="Incidencia">FALTA MINERAL EN TRITURACIÓN</td>
                     <td data-titulo="Descripcion">TRITURACION FUERA OPERACIÓN POR FALTA DE MINERAL </td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">5</td>
                     <td data-titulo="Fecha">24/03/2020</td>
+                    <td data-titulo="Area">Molienda</td>
                     <td data-titulo="Incidencia">SIN ENERGIA ELECTRICA</td>
                     <td data-titulo="Descripcion">PLANTA FUERA DE OPERACIÓN POR DAÑO MOTOR COMPRESOR ; SIN ENERGIA ELECTRICA </td>
                 </tr>

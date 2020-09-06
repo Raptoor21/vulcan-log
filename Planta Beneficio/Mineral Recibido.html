@@ -32,15 +32,27 @@
 </head>
 
  <header>
-    <a class="regresar" href="Planta Beneficio.html"> <span class="icon-arrow-left"> Regresar </a>
-
     <div class="logo-img">
         <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
+        <div class="titulo-pag1">
+            <h1 class="tam">Molienda</h1>
+        </div>
+        <span class="icon-bell notificacion">
     </div>
-
-    <p>Bienvenido <span class="user-selected">@Nombre Usuario  </span><span class="icon-user"></p>
+    <div class="menu-bar">
+        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
+    </div>
+        <nav>
+             <ul>
+                <li><a href="Mineral Molido.html"><span class="icon-add_circle">  Mineral Molido</a></li>
+                <li><a href="Planta Beneficio.html"><span class="icon-add_circle">  Estatus Mineral</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Inventario</a></li>
+                <li><a href="Incidencias.html"><span class="icon-add_circle">  Incidencias</a></li>
+                <li><a href="../mantenimiento/mantenimiento area.html"><span class="icon-wrench">  Mantenimiento</a></li>  
+            </ul>
+        </nav>
 </header>  
 
 <body>
@@ -51,7 +63,7 @@
                 <li><a href="AGREGAR/AgMineralRecibido.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
-        <div class="titulo">
+        <div class="titulo-pag">
         <h1>Mineral Recibido</h1>
     </div>
     </section>
@@ -74,9 +86,10 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Fecha</th>
-                    <th>Mina</th>
-                    <th>Ticket</th>
+                    <th>Fecha Ingreso</th>
+                    <th>Procedencia</th>
+                    <th>Ticket Trituracion</th>
+                    <th>Estatus</th>
                     <th>TMH</th>
                     <th>HUM</th>
                     <th>TMS</th>
@@ -85,29 +98,32 @@
             <tbody>
                 <tr>
                     <td data-titulo="Id">1</td>
-                    <td data-titulo="Fecha">01/03/2020</td>
+                    <td data-titulo="Fecha">03/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3221</td>
-                    <td data-titulo="TMH">22.9</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">22.21</td>
+                    <td data-titulo="Ticket">513</td>
+                    <td data-titulo="Estatus">------</td>
+                    <td data-titulo="TMH">24.05</td>
+                    <td data-titulo="% HUM">1</td>
+                    <td data-titulo="TMS">23.80</td>
                 </tr>
                <tr>
                     <td data-titulo="Id">2</td>
-                    <td data-titulo="Fecha">01/03/2020</td>
+                    <td data-titulo="Fecha">03/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Ticket">3223</td>
-                    <td data-titulo="TMH">22.86</td>
-                    <td data-titulo="HUM">3</td>
-                    <td data-titulo="TMS">22.17</td>
+                    <td data-titulo="Ticket">512</td>
+                    <td data-titulo="Estatus">Recibido</td>
+                    <td data-titulo="TMH">22.22</td>
+                    <td data-titulo="% HUM">1</td>
+                    <td data-titulo="TMS">21.99</td>
                 </tr>
                 <tr>
                     <td data-titulo="Id">3</td>
                     <td data-titulo="Fecha">02/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
                     <td data-titulo="Ticket">3226</td>
+                    <td data-titulo="Estatus">Recibido</td>
                     <td data-titulo="TMH">19.17</td>
-                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="% HUM">3</td>
                     <td data-titulo="TMS">18.59</td>
                 </tr>
                 <tr>
@@ -115,8 +131,9 @@
                     <td data-titulo="Fecha">03/03/2020</td>
                     <td data-titulo="Mina">Mina 1</td>
                     <td data-titulo="Ticket">3230</td>
+                    <td data-titulo="Estatus">Recibido</td>
                     <td data-titulo="TMH">21.12</td>
-                    <td data-titulo="HUM">3</td>
+                    <td data-titulo="% HUM">3</td>
                     <td data-titulo="TMS">20.49</td>
                 </tr>
             </tbody>

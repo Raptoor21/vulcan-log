@@ -16,7 +16,7 @@
     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
     <!-- iconos moon -->
-    <link rel="stylesheet" href="../../iconos/fonts/style.css">
+    <link rel="stylesheet" href="../iconos/fonts/style.css">
 
     <!-- tipo de letra -->
     <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
 
      <!-- Nuestro css-->
-    <link rel="stylesheet" type="text/css" href="css/requisiciones de material.css">
+    <link rel="stylesheet" type="text/css" href="css/registro de mineral.css">
 
     <!-- meta vp -->
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
@@ -33,39 +33,25 @@
 
 <header>
     <div class="logo-img">
-        <a href="../../menu/menu.html">
+        <a href="../menu/menu.html">
             <img src="img/logotipohead.png"/>
         </a>
          <div class="titulo-pag1">
-            <h1 class="tam">Vigilancia</h1>
+            <h1 class="tam">Registro de Mineral</h1>
         </div>
-        <span class="icon-bell notificacion">
+        <span class="icon-user notificacion">
     </div>
-
-    <div class="menu-bar">
-        <a href="#" class="bt-menu">Menu <span class="icon-menu"></a>
-    </div>
-        <nav>
-             <ul>
-                <li><a href="../inicio/vigilancia.html"><span class="icon-truck">  Tickets Camiones</a></li>
-                <li><a href="../registro de Mineral/registro de Mineral.html"><span class="icon-diamond">  Registro de Mineral</a></li>
-                <li><a href="../tickets de combustibles/tickets de combustibles.html"><span class="icon-local_gas_station">  Tickets de Combustibles</a></li>  
-                <li><a href="requisiciones de material.html"><span class="icon-file-text">  Requisiciones de Material</a></li>
-                <li><a href="../entrega de materiales/entrega de materiales.html"><span class="icon-enter">  Entrega Materiales</a></li>
-                <li><a href="../../compras/compras area.html"><span class="icon-cart">  Compras</a></li>
-            </ul>
-        </nav>
 </header>
 
 <body>
 
     <section>
         <div class="titulo-pag">
-            <h1 class="tam">Requisiciones de Material</h1>
+            <h1 class="tam"></h1>
         </div>
         <div>
             <ul class="agregar quit-p">
-                <li><a href="../AGREGAR NUEVO/Agregar Requisiciones de Material/AgRequiMaterial.html"><span class="icon-add_circle">  Agregar</a></li>
+               <li><a href="../AGREGAR NUEVO/Agregar Registro de Mineral/AgRegistroMineral.html"><span class="icon-add_circle">  Agregar</a></li>
             </ul>
         </div>
     </section>
@@ -86,7 +72,6 @@
     		<h3><input type="checkbox" name="Id"> Id </h3>
     		<h3><input type="checkbox" name="Mina"> Mina </h3>
     		<h3><input type="checkbox" name="Placas"> Placas </h3>
-    		<h3><input type="checkbox" name="Folio"> Folio </h3>
     		<h3><input type="checkbox" name="Estado"> Estado </h3>
     		<h4 button type="submit" class="btn btn-dark btn-filtrar"> <i class="fas fa-sign-in-alt icon-ing"> </i> Filtrar</h4>
     	</div>
@@ -97,74 +82,79 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Mina</th>
-                    <th>Placas</th>
                     <th>Fecha</th>
+                    <th>Procedencia</th>
+                    <th>Ticket</th>
                     <th>Conductor</th>
+                    <th>Camion</th>
+                    <th>Placas Camion</th>
                     <th>Peso Neto</th>
                     <th>Tara</th>
-                    <th>Folio</th>
-                    <th>Estado</th>
-                    <th>Foto</th>
+                    <th>Estatus Ticket</th>
+                    <th>Img Referencia</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td data-titulo="Id">1ABG235478</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Placas">DGO15478HD</td>
+                    <td data-titulo="Id">1</td>
                     <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 1</td>
+                    <td data-titulo="ticket">1A5R9T5FFE2F</td>
                     <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion rojo</td>
+                    <td data-titulo="Placas">DGO15478HD</td>
                     <td data-titulo="Peso Neto">2500kg</td>
-                    <td data-titulo="Tara">Tara xD</td>
-                    <td data-titulo="Folio">1A5R9T5FFE2F</td>
-                    <td data-titulo="Estado">Pagado</td>
+                    <td data-titulo="Tara">10</td>
+                    <td data-titulo="Estatus">bascula interna</td>
                     <td data-titulo="Foto">
                         <img src="img/info.png">
                     </td>
                 </tr>
                 <tr>
-                    <td data-titulo="Id">1ABG235478</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Placas">DGO15478HD</td>
+                    <td data-titulo="Id">2</td>
                     <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Procedencia">Mina 2</td>
+                    <td data-titulo="ticket">1A5R9T5FFE2F</td>
                     <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion azul</td>
+                    <td data-titulo="Placas">DGO15478HD</td>
                     <td data-titulo="Peso Neto">2500kg</td>
-                    <td data-titulo="Tara">Tara xD</td>
-                    <td data-titulo="Folio">1A5R9T5FFE2F</td>
-                    <td data-titulo="Estado">Pagado</td>
+                    <td data-titulo="Tara">20</td>
+                    <td data-titulo="Estatus">bascula externa pagado</td>
+                    <td data-titulo="Foto">
+                        <img src="img/info.png">
+                    </td>
+                </tr> 
+                <tr>
+                    <td data-titulo="Id">3</td>
+                    <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Procedencia">jales</td>
+                    <td data-titulo="ticket">1A5R9T5FFE2F</td>
+                    <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion azul</td>
+                    <td data-titulo="Placas">DGO15478HD</td>
+                    <td data-titulo="Peso Neto">2500kg</td>
+                    <td data-titulo="Tara">10</td>
+                    <td data-titulo="Estatus">bascula externa no pagado</td>
                     <td data-titulo="Foto">
                         <img src="img/info.png">
                     </td>
                 </tr>
                 <tr>
-                    <td data-titulo="Id">1ABG235478</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Placas">DGO15478HD</td>
+                    <td data-titulo="Id">4</td>
                     <td data-titulo="Fecha">16/03/2020</td>
+                    <td data-titulo="Procedencia">Mina spot</td>
+                    <td data-titulo="ticket">1A5R9T5FFE2F</td>
                     <td data-titulo="Conductor">Juanito Perez</td>
+                    <td data-titulo="Camion">camion blanco</td>
+                    <td data-titulo="Placas">DGO15478HD</td>
                     <td data-titulo="Peso Neto">2500kg</td>
-                    <td data-titulo="Tara">Tara xD</td>
-                    <td data-titulo="Folio">1A5R9T5FFE2F</td>
-                    <td data-titulo="Estado">Pagado</td>
+                    <td data-titulo="Tara">15</td>
+                    <td data-titulo="Estatus">Sin ticket</td>
                     <td data-titulo="Foto">
                         <img src="img/info.png">
                     </td>
-                </tr>
-                <tr>
-                    <td data-titulo="Id">1ABG235478</td>
-                    <td data-titulo="Mina">Mina 1</td>
-                    <td data-titulo="Placas">DGO15478HD</td>
-                    <td data-titulo="Fecha">16/03/2020</td>
-                    <td data-titulo="Conductor">Juanito Perez</td>
-                    <td data-titulo="Peso Neto">2500kg</td>
-                    <td data-titulo="Tara">Tara xD</td>
-                    <td data-titulo="Folio">1A5R9T5FFE2F</td>
-                    <td data-titulo="Estado">Pagado</td>
-                    <td data-titulo="Foto">
-                        <img src="img/info.png">
-                    </td>
-                </tr>                
+                </tr>          
             </tbody>
         </table>
 

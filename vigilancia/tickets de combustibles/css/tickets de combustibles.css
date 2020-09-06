@@ -10,16 +10,25 @@ body{
 }
 
 .logo-img img{
-  width: 17%;
-  margin-left:41%;
+  width: 10%;
+  margin-left:6%;
+}
+
+.notificacion{
+	color:white;
+	font-size: 2vw;
+	margin-left: 90%;
+	float:left;
+	margin-top: -3%;
 }
 
 .agregar{
 	width:10%;
 	height:10%;
 	background:#000000;
-	float: right;
 	margin-right: 8%;
+	margin-top: -5%;
+	float: right;
 	display: block;
 	position: relative;
 }
@@ -30,6 +39,21 @@ body{
 	text-align: center;
 	font-size: 1.8vw;
 
+}
+
+.buscar{
+	color: black;
+	margin-left: 8%;
+	margin-bottom: 4%;
+}
+
+.buscar h3{
+	font-size: 1.8vw;
+}
+
+.buscarinput{
+	float:left;
+	margin-right: 20px; 
 }
 
 .submenu{
@@ -73,7 +97,14 @@ section ul li a:hover {
 	color: black;
 	margin-bottom:30px;
 	display: block;
-	float: left;
+	margin-left: 32%;
+	width: 35%;
+}
+
+.titulo-pag1{
+	text-align: center;
+	color: white;
+	margin-top: -4%;
 	margin-left: 32%;
 	width: 35%;
 }
